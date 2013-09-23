@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LearnAsync.NET - A Study and Toolkit for Asynchronous Programming in C#</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A Study and Toolkit for Asynchronous Programming in C#">
+		<meta name="author" content="Semih Okur">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
+		<link href="css/m-styles.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link rel="image_src" href="thumbnail.png">
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<base target="_blank">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
+
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+	<!--start navigation-->
+		<div class="navbar navbar-fixed-top" id="navigation">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<!-- <a href="#intro" class="brand"><img src="img/logo.png" alt=""></a> -->
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#empiricalstudy-top" onclick="$('.stats span').countTo();">Empirical Study</a></li>
+							<li><a href="#toolkit-top">Toolkit</a></li>
+							<li><a href="#team-top">Team</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="intro">
+			<div class="container" style="display:table; height:100%;">
+				<div class="row" style="vertical-align:middle; display:table-cell ">
+					<div class="span12">
+						<div id="carousel_fade_intro" class="carousel slide carousel-fade">
+							<div class="carousel-inner">
+								<div class="active item">
+									<h2>A Study and Toolkit for Asynchronous Programming in C#</h2>
+									<div class="hidden-phone">
+										<p>We present the first study that analyzes the usage of asynchronous programming in a large experiment. We analyzed 1378 open source Windows Phone (WP) apps, comprising 12M SLOC, produced by 3376 developers. Using this data, we answer 2 research questions about use and misuse of asynchronous constructs. Inspired by these findings, we developed (i) Asyncifier, an automated refactoring tool that converts callback-based asynchronous code to the new async/await; (ii) Corrector, a tool that finds and corrects common misuses of async/await.</p>
+										<a href="http://cs.illinois.edu"><img src="img/uiuc.png"></a>
+										<a href="http://www.tudelft.nl"><img src="img/delft.png"></a>
+										<a href="http://eecs.oregonstate.edu"><img src="img/oregon.png"></a>
+										<a href="http://research.microsoft.com/en-us/collaboration/focus/cs/seif.aspx"><img src="img/seif.png"></a>
+									</div>							
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fadeInUp delay animated hidden-phone" id="more">
+				<a href="#empiricalstudy-top" class="m-btn a-btn blue big icn-only"><i class="icon-sort-down icon-3x pull-left"></i></a>
+			</div>
+		</section>
+	<!--start empiricalstudy header-->
+		<section id="empiricalstudy-top">
+	<!--start empiricalstudy-desktop header-->
+			<section id="empiricalstudy-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+	<!--start empiricalstudy-mobile header-->
+			<section id="empiricalstudy-top-mobile" class="hidden-desktop">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+		</section>
+	<!--start empiricalstudy-->
+		<section id="empiricalstudy">
+			<div class="container empiricalstudy">
+				<div class="row divide">
+					<div class="span8 offset2">
+						<p class="center">We present the first study that analyzes the usage of asynchronous libraries and new language constructs, async/await in a large experiment.</p>
+					</div>
+					<div class="span12 stats">
+						<div class="span3 offset2">
+							<p class="caption"> We analyzed:</p>
+							<p class="caption"><span data-from="0" data-speed="5000" data-to="1387">1378</span> Windows Phone Apps</p>
+							
+						</div>
+						<div class="span3">
+							<p class="caption"> comprising</p>
+							<p class="caption"><span data-from="0" data-speed="5000" data-to="12">12</span>M Source Lines of Code</p>
+						</div>						
+						<div class="span3">
+							<p class="caption"> produced by </p>	
+							<p class="caption"><span data-from="0" data-speed="5000" data-to="3376">3376</span> Developers</p>
+						</div>																							
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="row divide">
+					<div class="span8 offset2">
+						<h2>Code Corpus</h2>
+						<p>These are the Windows Phone applications that we studied: <a target="_self" href="applications.html">Application List</a>. <br>
+						We gathered these applications from Github and Codeplex by using our tool <a href="http://www.github.com/semihokur/wpcollector">WPCollector</a>.</p>
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="row divide">
+					<div class="span8 offset2">
+						<h2>Usage Examples of Asynchronous Idioms</h2>
+						<div class="tabbable table-responsive"> <!-- Only required for left/right tabs -->
+						  <ul class="nav nav-tabs">
+						    <li class="active"><a href="#tab1" data-toggle="tab">Long-running CPU-Bound Operations</a></li>
+						    <li><a href="#tab2" data-toggle="tab">Blocking I/O-Bound Operations</a></li>
+						  </ul>
+						  <div class="tab-content">
+						    <div class="tab-pane active" id="tab1">
+						      <table class="table table-hover">
+						      	<tr> <td>New Thread</td> <td><a target="_self" href="thread.html">Link to Usage Examples</a></td></tr>
+						      	<tr> <td>Background Worker</td> <td><a target="_self" href="backgroundworker.html">Link to Usage Examples</a></td></tr>
+						      	<tr> <td>Threadpool</td> <td><a target="_self" href="threadpool.html">Link to Usage Examples</a></td></tr>
+						      	<tr> <td>New Task</td> <td><a target="_self" href="task.html">Link to Usage Examples</a></td></tr>
+  							  </table>
+						    </div>
+						    <div class="tab-pane" id="tab2">
+						    <table class="table table-hover">
+						      	<tr> <td>Callback-Based APM Idioms</td> <td><a target="_self" href="apm.html">Link to Usage Examples</a></td></tr>
+						      	<tr> <td>Task-Based TAP Idioms with async/await</td> <td><a target="_self" href="tap.html">Link to Usage Examples</a></td></tr>
+  							  </table>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="row divide">
+					<div class="span8 offset2">
+						<h2>Misuses of Async/Await</h2>
+						<p>Will be added soon</p>
+					</div>
+				</div>								
+			</div>
+		</section>
+		<section id="hint1">
+			<a href="http://learnparallelism.net" target="_blank">Check out our other empirical study for parallel libraries: <strong>LearnParallelism.NET</strong></a>
+		</section>
+	<!--start toolkit header-->
+		<section id="toolkit-top">
+	<!--start toolkit-desktop header-->
+			<section id="toolkit-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+				<h1 class="header">Toolkit</h1>
+				<p class="header">Asyncifier and Corrector</p>
+			</section>
+	<!--start toolkit-mobile header-->
+			<section id="toolkit-top-mobile" class="hidden-desktop">
+				<h1 class="header">Toolkit</h1>
+				<p class="header">Asyncifier and Corrector</p>
+			</section>
+		</section>
+	<!--start toolkit-->
+		<section id="toolkit">
+			<div class="container">
+				<div class="row divide">
+					<div class="span8 offset2">
+						<p class="center">Because we used an internal version of Microsoft’s Roslyn, we had to sign an NDA, which prohibits us from releasing our tools. We will be able to publish the tools based on a public release that we expect by late Fall'13. Please subscribe our list to get informed when we release the toolkit.</p>
+						<div id="mc_embed_signup" style="text-align: center">
+							<form action="http://learnasync.us7.list-manage.com/subscribe/post?u=f5a1686ccbe4a5460d7ec3ac3&amp;id=f5daa965e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank">	
+								<input type="email" value="" name="EMAIL" class="span5 input-large email" id="mce-EMAIL" placeholder="email address" required="">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="span3 m-btn blue">
+							</form>
+						</div>	
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="row divide">
+					<div class="span8 offset2" style="overflow: auto">
+						<h2>Patches</h2>
+
+						<p>If the link to the patch or pull request is broken, it means that the application repository is removed from its hosting service (Github or Codeplex).</p>
+
+						<div class="table-responsive">
+						<table class="table table-hover">
+							<caption class="text-left">Table 1: Asyncifier Transformations</caption>  
+				             <thead>
+				               <tr>
+				                 <th class="appnameColumn">App Name</th>
+				                 <th class="statusColumn">Status</th>
+				                 <th>#</th>
+				                 <th>Link</th>
+				               </tr>
+				             </thead>
+				             <tbody>
+								 <tr><td>TheOldReaderWP</td><td>ACCEPTED</td><td>5</td><td><a href="https://github.com/Anthuan/TheOldReaderWP/pull/1">Link to PR or Patch</a></td></tr>
+
+								 <tr><td>Diettr-GPL</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/PawelStroinski/Diettr-GPL/pull/1/">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Ocell</td><td>ACCEPTED</td><td>3</td><td><a href="https://github.com/gjulianm/Ocell/pull/27/ ">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>phoneguitartab</td><td>ACCEPTED</td><td>3</td><td><a href="https://phoneguitartab.codeplex.com/SourceControl/list/patches">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>HackerNews</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/mbmccormick/HackerNews/pull/25">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Windows-Phone-Starter-Kit-for-RSS</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/ChrisKoenig/Windows-Phone-Starter-Kit-for-RSS/pull/4">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>SyncFramework-Toolkit</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/wmeints/SyncFrameworkToolkit/pull/2">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>2ch-Browser-WP7</td><td>ACCEPTED</td><td>3</td><td><a href="https://github.com/vortexwolf/2ch-Browser-WP7/pull/1/">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>battlelogmobile</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/mikkoviitala/battlelogmobile/pull/19/">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Ruminate</td><td>WAITING</td><td>1</td><td><a href="https://github.com/pcrockett/Ruminate/pull/1">Link to PR or Patch</a></td></tr>
+							  </tbody>
+						</table>
+						</div>
+						<p>Table 2 shows the applications which are selected to fix "Long-running operations under async methods". Table 3 shows the applications which are selected to fix "Unnecessary async/await methods". We did not especially select 10 apps to fix "Unnecessarily capturing context"; but Corrector did fix this misuse in the selected apps, shown in Table 2 and Table 3.</p>
+
+						<div class="table-responsive">
+						<table class="table table-hover">
+							<caption class="text-left">Table 2: Corrector Transformations - "Long-running operations under async methods"</caption>  						
+				             <thead>
+				               <tr>
+				                 <th class="appnameColumn">App Name</th>
+				                 <th class="statusColumn">Status</th>
+				                 <th>#</th>
+				                 <th>Link</th>
+				               </tr>
+				             </thead>
+				             <tbody>
+								 <tr><td>kido-win</td><td>ACCEPTED</td><td>5</td><td><a href="https://github.com/kidozen/kido-win/pull/1">Link to PR or Patch</a></td></tr>
+
+								 <tr><td>inspire</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/selbekk/inspire/pull/7">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>azure-wp-rest</td><td>ACCEPTED</td><td>3</td><td><a href="https://github.com/azchohfi/azure-wp-rest/pull/1">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Kinvey-WindowsPhone8</td><td>ACCEPTED</td><td>63</td><td><a href="https://github.com/Penrillian/KinveyWindowsPhone8/pull/6">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>indulged-flickr</td><td>ACCEPTED</td><td>54</td><td><a href=" https://github.com/powerytg/indulged-flickr/pull/1">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>battlelogmobile</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/mikkoviitala/battlelogmobile/pull/21">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>WindowsPhone-Common</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/nothingmn/WindowsPhone.Common/pull/1">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>kanboxwp</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/jarvisji/kanboxwp/pull/1">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>TheOldReaderWP</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/Anthuan/TheOldReaderWP">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>iRacer-MotionControl</td><td>was WAITING (now ACCEPTED)</td><td>1</td><td><a href="https://github.com/lanceseidman/iRacer_MotionControl/pull/1">Link to PR or Patch</a></td></tr>
+
+							 </tbody>
+						</table>
+						</div>
+
+						<div class="table-responsive">
+						<table class="table table-hover">
+							<caption class="text-left">Table 3: Corrector Transformations - "Unnecessary async/await methods"</caption>  						
+				             <thead>
+				               <tr>
+				                 <th class="appnameColumn">App Name</th>
+				                 <th class="statusColumn">Status</th>
+				                 <th>#</th>
+				                 <th>Link</th>
+				               </tr>
+				             </thead>
+				             <tbody>
+								 <tr><td>kido-win</td><td>ACCEPTED</td><td>47</td><td><a href="https://github.com/kidozen/kido-win/pull/2 ">Link to PR or Patch</a></td></tr>
+
+								 <tr><td>Cimbalino-Phone-Toolkit</td><td>ACCEPTED</td><td>3</td><td><a href="https://github.com/Cimbalino/Cimbalino-Phone-Toolkit/pull/21">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>restafari</td><td>ACCEPTED</td><td>41</td><td><a href="http://restafari.codeplex.com/SourceControl/changeset/103765">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>adsclient</td><td>ACCEPTED</td><td>24</td><td><a href="https://github.com/roelandmoors/adsclient/pull/3">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>kanboxwp</td><td>ACCEPTED</td><td>2</td><td><a href=" https://github.com/jarvisji/kanboxwp/pull/1">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>trellow</td><td>ACCEPTED</td><td>4</td><td><a href="https://github.com/Bunk/trellow/pull/4">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Bankr</td><td>ACCEPTED</td><td>1</td><td><a href="https://github.com/cpmcgrath/Bankr/pull/35">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>32feet</td><td>ACCEPTED</td><td>3</td><td><a href="http://32feet.codeplex.com/SourceControl/list/patches">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>wpnest</td><td>ACCEPTED</td><td>17</td><td><a href="https://github.com/GaryJohnson/wpnest/pull/5">Link to PR or Patch</a></td></tr>
+								 
+								 <tr><td>Kinvey-WindowsPhone8</td><td>ACCEPTED</td><td>7</td><td><a href="https://github.com/Penrillian/KinveyWindowsPhone8/pull/7">Link to PR or Patch</a></td></tr>
+
+							 </tbody>
+						</table>
+						</div>
+								
+								 
+					</div>
+				</div>
+				<div class="divider"></div>		
+				<div class="row divide">
+					<div class="span8 offset2">
+						<h2>What people say</h2>
+						<p class="center">These are what people say about the transformations of the toolkit when they accept our patches.</p>
+
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>That was pretty good, thanks. I'll look forward to the release of that refactoring tool, it seems to be really useful.
+								<small>Guillermo, <cite title="Source Title">Developer of Ocell</cite></small></p>
+							</blockquote>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>You are doing very interesting stuff. That's fortunate, because I've been thinking about replacing all asynchronous calls to new async/await style code
+								<small>Vitaliy Soubbotskyy, <cite title="Source Title">Developer of phoneguitartab</cite></small></p>
+							</blockquote>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>This is awesome insight! Great work! 
+								<small>Tiangong You, <cite title="Source Title">Developer of indulged-flickr</cite></small></p>
+							</blockquote>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>That’s very interesting and useful.
+								<small>Peter Freeman Foot, <cite title="Source Title">Developer of 32feet</cite></small></p>
+							</blockquote>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>That you have pointed out is correct. This time, performance has been improved to 28 milliseconds from 49 milliseconds.
+								<small>Kenji Wada, <cite title="Source Title">Developer of Softbuild.Data</cite></small></p>
+							</blockquote>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<blockquote>
+								<p>Totally agree, I normally try to take the same minimizing approach, though it seems I missed these. Thanks!
+								<small>Pedro Lamas, <cite title="Source Title">Developer of Cimbalino-Phone-Toolkit</cite></small></p>
+							</blockquote>
+						</div>												
+					</div>
+				</div>				
+			</div>
+	<div class="divider"></div>		
+		
+	<!--start team-->
+		<section id="team-top">
+			<div class="container">
+				<div class="row divide">
+					<div class="span12">
+						<h1>Team</h1>
+						<p class="center">This is a joint work with University of Illinois at Urbana-Champaign, Delft University of Technology, and Oregon State University.</p>
+					</div>
+					<div class="span12 team">
+						<div class="row">
+							<div class="span3">
+								<a href="http://www.semihokur.com"><span class="image-wrap" style="position:relative; display:inline-block; background:url(img/sem.png) no-repeat center center; width: 150px; height: 150px; border: 4px solid rgba(240, 240, 240, 0.34);"><img src="images/image-2.jpg" style="opacity: 0;"></span></a>
+								<h3>Semih Okur</h3>
+								<p>PhD Student<br>
+								University of Illinois</p>
+								<div class="teamSocial">
+									<ul class="unstyled inline">
+										<li class="icon"><a href="mailto:semih.okur@gmail.com"><i class="icon-envelope icon-2x"></i></a></li>
+										<li class="icon"><a href="http://www.twitter.com/semih_okur"><i class="icon-twitter icon-2x"></i></a></li>
+									</ul>
+								</div>								
+							</div>
+							<div class="span3">
+								<a href="http://blog.hartveld.com"><span class="image-wrap" style="position:relative; display:inline-block; background:url(img/david.png) no-repeat center center; width: 150px; height: 150px; border: 4px solid rgba(240, 240, 240, 0.34);"><img src="images/image-2.jpg" style="opacity: 0;"></span></a>
+								<h3>David Hartveld</h3>
+								<p>MSc Student<br>
+								Delft University of Technology</p>
+								<div class="teamSocial">
+									<ul class="unstyled inline">
+										<li class="icon"><a href="http://www.twitter.com/dlhartveld"><i class="icon-twitter icon-2x"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+							<div class="span3">
+								<a href="http://dig.cs.illinois.edu"><span class="image-wrap" style="position:relative; display:inline-block; background:url(img/danny.png) no-repeat center center; width: 150px; height: 150px; border: 4px solid rgba(240, 240, 240, 0.34);"><img src="images/image-2.jpg" style="opacity: 0;"></span></a>
+								<h3>Danny Dig</h3>
+								<p>Assistant Professor<br>
+								Oregon State University
+								<div class="teamSocial">
+									<ul class="unstyled inline">
+										<li class="icon"><a href="http://www.twitter.com/danny_dig"><i class="icon-twitter icon-2x"></i></a></li>
+									</ul>
+								</div>						
+							</div>
+							<div class="span3">
+								<a href="http://www.st.ewi.tudelft.nl/~arie"><span class="image-wrap" style="position:relative; display:inline-block; background:url(img/arie.png) no-repeat center center; width: 150px; height: 150px; border: 4px solid rgba(240, 240, 240, 0.34);"><img src="images/image-2.jpg" style="opacity: 0;"></span></a>
+								<h3>Arie van Deursen</h3>
+								<p>Professor<br>
+								Delft University of Technology</p>
+								<div class="teamSocial">
+									<ul class="unstyled inline">
+										<li class="icon"><a href="http://www.twitter.com/avandeursen"><i class="icon-twitter icon-2x"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>															
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!--latest jQuery-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--main bootstrap js-->
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<!--custom js-->
+		<script src="js/custom.js" type="text/javascript"></script>
+	<!--preloader-->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#status").fadeOut();
+				$("#preloader").delay(350).fadeOut("slow");
+			})
+		</script>
+	<!--retina support-->
+		<script src="js/retina.js" type="text/javascript"></script>
+	<!--smooth scroll on page-->
+		<script src="js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+	<!--custom scrollbar-->
+		<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<!--parallax-->
+		<script src="js/jquery.stellar.js" type="text/javascript"></script>
+	<!--contact-->
+		<script src="js/jquery.form.js"></script>		
+	<!--gallery lightbox-->
+		<script src="js/bootstrap-lightbox.min.js"></script>
+
+	<!--google analytics-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44202711-1', 'learnasync.net');
+		  ga('send', 'pageview');
+
+		</script>
+		<script src="js/jquery.countTo.js"></script>	
+
+		
+		<script id="_webengage_script_tag" type="text/javascript">
+		  var _weq = _weq || {};
+		  _weq['webengage.licenseCode'] = '311c49c5';
+		  _weq['webengage.widgetVersion'] = "4.0";
+		  
+		  (function(d){
+		    var _we = d.createElement('script');
+		    _we.type = 'text/javascript';
+		    _we.async = true;
+		    _we.src = (d.location.protocol == 'https:' ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/widget/webengage-min-v-4.0.js";
+		    var _sNode = d.getElementById('_webengage_script_tag');
+		    _sNode.parentNode.insertBefore(_we, _sNode);
+		  })(document);
+		</script>
+
+
+	</body>
+</html>
