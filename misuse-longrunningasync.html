@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Misuses - Long-running Operations Under async Methods - LearnAsync.NET</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A Study and Toolkit for Asynchronous Programming in C#">
+		<meta name="author" content="Semih Okur">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
+		<link href="css/m-styles.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link rel="image_src" href="thumbnail.png">
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<base target="_blank">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+	<!--start navigation-->
+		<div class="navbar navbar-fixed-top" id="navigation">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<!-- <a href="#intro" class="brand"><img src="img/logo.png" alt=""></a> -->
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<li><a target="_self" href="index.html#intro">Home</a></li>
+							<li><a target="_self" href="index.html#empiricalstudy-top" onclick="$('.stats span').countTo();">Empirical Study</a></li>
+							<li><a target="_self" href="index.html#toolkit-top">Toolkit</a></li>
+							<li><a target="_self" href="index.html#team-top">Team</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<!--start services header-->
+		<section id="empiricalstudy-top">
+	<!--start empiricalstudy-desktop header-->
+			<section id="empiricalstudy-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+	<!--start empiricalstudy-mobile header-->
+			<section id="empiricalstudy-top-mobile" class="hidden-desktop">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+		</section>
+			<div class="container usage">		
+				<div class="row divide">
+					<div class="span12 table-responsive" style="overflow: auto">
+						<h1>Long-running Operations Under async Methods</h1>
+						<p> For now, we included all usages from only Github applications because Codeplex does not allow to highlight the code snippet in their source code viewer interface.
+
+						<p>If the link to the app is broken, it means that the application repository is removed from its hosting service (Github or Codeplex).</p>
+
+						<table class="table table-hover table-bordered">
+				              <thead>
+				                <tr>
+				                  <th style="width:78%">Method Name</th>
+				                  <th>Link</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+
+<tr><td>private async void ButtonCheckCredentials_Click (object sender, RoutedEventArgs e)</td><td><a href='http://www.github.com/Anthuan/TheOldReaderWP/blob/d63a2959e6023c06f99623fc7159268ccee90463/PhoneApp1/Settings.xaml.cs#L78-87'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;String> getRequestAsync (string url)</td><td><a href='http://www.github.com/ApexHAB/apex-lumia/blob/47fb019f96e1fd3d06572a9e1ea1454a55645e20/ApexLumia/HTTPRequests.cs#L18-31'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;String> putRequestAsync (string url, string putData)</td><td><a href='http://www.github.com/ApexHAB/apex-lumia/blob/47fb019f96e1fd3d06572a9e1ea1454a55645e20/ApexLumia/HTTPRequests.cs#L39-63'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;String> postRequestAsync (string url, string postData, string authorization = "", bool Expect100Continue = true)</td><td><a href='http://www.github.com/ApexHAB/apex-lumia/blob/47fb019f96e1fd3d06572a9e1ea1454a55645e20/ApexLumia/HTTPRequests.cs#L65-89'>Link to Source Code</a></td> </tr>
+<tr><td>public async static Task&lt;bool> CreatWriteTo (string path, string fname, string str)</td><td><a href='http://www.github.com/bugsense/BugSense-WP8/blob//BugSense-WP8/../Shared/Internal/Files.cs#L161-240'>Link to Source Code</a></td> </tr>
+<tr><td>public async static Task&lt;Tuple<string, bool>> ReadFrom (string fpathname)</td><td><a href='http://www.github.com/bugsense/BugSense-WP8/blob//BugSense-WP8/../Shared/Internal/Files.cs#L244-308'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;string> PostXml (string url, string postdata)</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/Common/WP8WebRequestProcessor.cs#L16-45'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;string> Get (string url)</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/Common/WP8WebRequestProcessor.cs#L47-65'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ReproduceSpeech (string templatePth, object currentText)</td><td><a href='http://www.github.com/DeaDiana/WindowsPhone/blob/cb6b104e55b0e958bf8fe5936e6cc7d044c702fe/Joker2/Joker2/MainPage.xaml.cs#L120-137'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task InitializeCategories ()</td><td><a href='http://www.github.com/Depechie/GF13/blob/51409e3f6c16de38422a00d05fc50c18b692e504/AppCreativity.GentseFeesten.WP8/AppCreativity.GentseFeesten.WP8/ViewModel/MainViewModel.cs#L276-310'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task InitializeEvents ()</td><td><a href='http://www.github.com/Depechie/GF13/blob/51409e3f6c16de38422a00d05fc50c18b692e504/AppCreativity.GentseFeesten.WP8/AppCreativity.GentseFeesten.WP8/ViewModel/MainViewModel.cs#L312-327'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task InitializeDays ()</td><td><a href='http://www.github.com/Depechie/GF13/blob/51409e3f6c16de38422a00d05fc50c18b692e504/AppCreativity.GentseFeesten.WP8/AppCreativity.GentseFeesten.WP8/ViewModel/MainViewModel.cs#L329-363'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;String> Login (String username, String password, String captcha, String loginCode)</td><td><a href='http://www.github.com/dobroezlo/MetroLepra/blob/d33a0ef577fff4f5820344d7820840809e5d3817/MetroLepra/MetroLepraCore/ConnectionAgent.cs#L270-302'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;byte[]> ReadAsByteArrayAsync ()</td><td><a href='http://www.github.com/dotMorten/SharpGIS.HttpClient.WP/blob/6552715db27c33fe0808138ce8903d59add3650d/src/SharpGIS.HttpClient.WP/Http/HttpContent.cs#L98-118'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async Task SerializeToStreamAsync (Stream stream, TransportContext context)</td><td><a href='http://www.github.com/dotMorten/SharpGIS.HttpClient.WP/blob/6552715db27c33fe0808138ce8903d59add3650d/src/SharpGIS.HttpClient.WP/Http/MultipartContent.cs#L111-128'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;byte[]> ReadAsByteArrayAsync ()</td><td><a href='http://www.github.com/dotMorten/SharpGIS.HttpClient.WP/blob/6552715db27c33fe0808138ce8903d59add3650d/src/SharpGIS.HttpClient.WP/Http/HttpContent.cs#L98-118'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async Task SerializeToStreamAsync (Stream stream, TransportContext context)</td><td><a href='http://www.github.com/dotMorten/SharpGIS.HttpClient.WP/blob/6552715db27c33fe0808138ce8903d59add3650d/src/SharpGIS.HttpClient.WP/Http/MultipartContent.cs#L111-128'>Link to Source Code</a></td> </tr>
+<tr><td>async private Task WaitForNetwork ()</td><td><a href='http://www.github.com/eTilbudsavis/native-windows-phone-sdk/blob/231feb7e5bea2dfbb4c341875b6ee7c8d71ec3c1/EtaSampleApp/Views/MainPage.xaml.cs#L57-73'>Link to Source Code</a></td> </tr>
+<tr><td>async private Task InitializeUserDataAndServices ()</td><td><a href='http://www.github.com/eTilbudsavis/native-windows-phone-sdk/blob/231feb7e5bea2dfbb4c341875b6ee7c8d71ec3c1/EtaSampleApp/Views/MainPage.xaml.cs#L75-113'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;bool> IsValidLoginCredential (LoginCredentialModel loginCredential)</td><td><a href='http://www.github.com/gep13/VBForums-Viewer/blob/1b11a7a9cf9d11ea02bd619cb630d343acde3eb6/Gep13.WindowsPhone.VBForumsMetro.Core/Web/VBForumsWebService.cs#L39-75'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;ProfileModel> GetProfileForUser (int memberId, LoginCredentialModel loginCredential)</td><td><a href='http://www.github.com/gep13/VBForums-Viewer/blob/1b11a7a9cf9d11ea02bd619cb630d343acde3eb6/Gep13.WindowsPhone.VBForumsMetro.Core/Web/VBForumsWebService.cs#L146-275'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;int> GetMemberIdForUser (LoginCredentialModel loginCredential)</td><td><a href='http://www.github.com/gep13/VBForums-Viewer/blob/1b11a7a9cf9d11ea02bd619cb630d343acde3eb6/Gep13.WindowsPhone.VBForumsMetro.Core/Web/VBForumsWebService.cs#L282-349'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task ClassInit ()</td><td><a href='http://www.github.com/kidozen/kido-win/blob/bf4036cf192f18a5cfd7cb7d5689f0f13ba5c670/test.wp80/../tests/File.cs#L28-46'>Link to Source Code</a></td> </tr>
+<tr><td>private async void BT2Arduino_Send (string WhatToSend)</td><td><a href='http://www.github.com/lanceseidman/iRacer_MotionControl/blob/27fb0e3c2532b4fe3b3a4168cd71dbfe25004945/Arduino2WP8/MainPage.xaml.cs#L250-270'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;FlipTileData> CreateTileData (Uri tileUri)</td><td><a href='http://www.github.com/lucaswerkmeister/wp_geohashing/blob/1ba2da25906a6ea74b87c936b6d157af47d0d5e7/Base/Tiles.cs#L79-144'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task LogInCommandReceived ()</td><td><a href='http://www.github.com/mikkoviitala/battlelogmobile/blob/fc0a9eca3990c2e7af8a17a99f0e2996f62c1358/BattlelogMobile.Client/ViewModel/MainViewModel.cs#L212-284'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task RetrieveServerMessage (string url)</td><td><a href='http://www.github.com/mikkoviitala/battlelogmobile/blob/fc0a9eca3990c2e7af8a17a99f0e2996f62c1358/BattlelogMobile.Core/Service/DownloadService.cs#L29-56'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateAndOpenFileClicked (object sender, RoutedEventArgs e)</td><td><a href='http://www.github.com/mrlacey/wp8demos/blob/2f4604c42e62b98da04ff3ce6fa13930cdf4cff0/demos/launchingSource/LsMainPage.xaml.cs#L21-37'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;string> Upload (string uploadUrl, byte[] content)</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/Services/ImageUploader/ImageUploader.cs#L11-55'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task UpdateListFromRemote ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/S1Nyan.App.WP7/Model/ServerModel.cs#L80-108'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/MainPage.xaml.cs#L132-208'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CameraCaptureTaskCompleted (object sender, PhotoResult e)</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/AnswerQuestion.xaml.cs#L160-281'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExchangeAuthorizationCode (string authorizationCode)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/AuthorizationViewModel.cs#L122-154'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExecuteInitialLoad ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L260-300'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ChangeStaredStatus (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L320-363'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task RefreshFilesAsync ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L458-519'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task&lt;bool> DeleteFileAsync (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L521-549'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateNewFolder ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/NewFolderViewModel.cs#L82-113'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RenameFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/RenameFileViewModel.cs#L88-121'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DownloadFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ViewFileViewModel.cs#L151-184'>Link to Source Code</a></td> </tr>
+<tr><td>public static async Task&lt;T> SendAndDeserialize (this HttpClient client, HttpRequestMessage requestMessage, CancellationToken cancellationToken)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/Helpers/ExtensionMethods.cs#L28-40'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExchangeAuthorizationCode (string authorizationCode)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/AuthorizationViewModel.cs#L122-154'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExecuteInitialLoad ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L260-300'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ChangeStaredStatus (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L320-363'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task RefreshFilesAsync ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L458-519'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task&lt;bool> DeleteFileAsync (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L521-549'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateNewFolder ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/NewFolderViewModel.cs#L82-113'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RenameFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/RenameFileViewModel.cs#L88-121'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DownloadFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ViewFileViewModel.cs#L151-184'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;KinveyHandshakeResponse> Do ()</td><td><a href='http://www.github.com/Penrillian/KinveyWindowsPhone8/blob/bd0e0dcd8d66278ed7134f000493b1197532df40/Com.Penrillian.Kinvey/KinveyHandshake.cs#L30-38'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;T> Create (T t)</td><td><a href='http://www.github.com/Penrillian/KinveyWindowsPhone8/blob/bd0e0dcd8d66278ed7134f000493b1197532df40/Com.Penrillian.Kinvey/KinveyService.cs#L61-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;T> Update (T t)</td><td><a href='http://www.github.com/Penrillian/KinveyWindowsPhone8/blob/bd0e0dcd8d66278ed7134f000493b1197532df40/Com.Penrillian.Kinvey/KinveyService.cs#L86-93'>Link to Source Code</a></td> </tr>
+<tr><td>private static async Task&lt;TR> GetResult (IHttpResponseMessage response)</td><td><a href='http://www.github.com/Penrillian/KinveyWindowsPhone8/blob/bd0e0dcd8d66278ed7134f000493b1197532df40/Com.Penrillian.Kinvey/KinveyService.cs#L131-146'>Link to Source Code</a></td> </tr>
+<tr><td>private static async Task&lt;TResponse> ResponseOrError (IHttpResponseMessage response)</td><td><a href='http://www.github.com/Penrillian/KinveyWindowsPhone8/blob/bd0e0dcd8d66278ed7134f000493b1197532df40/Com.Penrillian.Kinvey/KinveyUserService.cs#L212-221'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;HttpWebResponse> DispatchRequest (string httpMethod, string apiUrl, Dictionary<string, string> parameters)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCore.cs#L27-89'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetDiscoveryStreamAsync (Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreDiscoveryExtension.cs#L18-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupInfoAsync (string groupId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreGroupExtension.cs#L15-62'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupPhotosAsync (string groupId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreGroupExtension.cs#L66-121'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetRequestTokenAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreOAuthExtension.cs#L100-140'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetAccessTokenAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreOAuthExtension.cs#L142-197'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetEXIFAsync (string photoId)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoExtension.cs#L23-80'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SearchPhotoAsync (string searchSessionId, string query = null, string tags = null, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreSearchExtension.cs#L15-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SearchGroupsAsync (string searchSessionId, string query = null, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreSearchExtension.cs#L70-117'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoSetListAsync (string userId)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoSetExtension.cs#L19-55'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoSetPhotosAsync (string setId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoSetExtension.cs#L59-114'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPopularTagListAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreTagExtension.cs#L15-49'>Link to Source Code</a></td> </tr>
+<tr><td>public async void UploadPhoto (string sessionId, string fileName, Stream stream, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUploadExtension.cs#L19-83'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task&lt;HttpWebResponse> UploadDataAsync (string fileName, Stream imageStream, Dictionary<string, string> parameters)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUploadExtension.cs#L85-143'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoStreamAsync (string userId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUserExtension.cs#L18-82'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupListAsync (string userId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUserExtension.cs#L86-140'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ProcessFiles (string result)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone8/../StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L176-217'>Link to Source Code</a></td> </tr>
+<tr><td>private async void EncryptAndUploadCards (ObservableCollection<Card> cards)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone8/../StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L239-281'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfile (string filepath)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L182-244'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfileToken (string fileToken)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L246-314'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfileFromSandbox (string fileToken)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L316-381'>Link to Source Code</a></td> </tr>
+<tr><td>private async Task GetResponseCallback (Task&lt;WebResponse> task)</td><td><a href='http://www.github.com/vortexwolf/2ch-Browser-WP7/blob/361ffab286d0532477b0c6775f39aa4cd71516e7/DvachBrowser/Assets/HttpTasks/HttpPostTask.cs#L51-89'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;byte[]> ReadAsByteArrayAsync ()</td><td><a href='http://www.github.com/zwaap/HttpClient/blob/dc4be7165d5a2bda14c0bf67738375df61d99233/src/SharpGIS.HttpClient.WP/Http/HttpContent.cs#L98-118'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async Task SerializeToStreamAsync (Stream stream, TransportContext context)</td><td><a href='http://www.github.com/zwaap/HttpClient/blob/dc4be7165d5a2bda14c0bf67738375df61d99233/src/SharpGIS.HttpClient.WP/Http/MultipartContent.cs#L111-128'>Link to Source Code</a></td> </tr>
+<tr><td>public async Task&lt;byte[]> ReadAsByteArrayAsync ()</td><td><a href='http://www.github.com/zwaap/HttpClient/blob/dc4be7165d5a2bda14c0bf67738375df61d99233/src/SharpGIS.HttpClient.WP/Http/HttpContent.cs#L98-118'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async Task SerializeToStreamAsync (Stream stream, TransportContext context)</td><td><a href='http://www.github.com/zwaap/HttpClient/blob/dc4be7165d5a2bda14c0bf67738375df61d99233/src/SharpGIS.HttpClient.WP/Http/MultipartContent.cs#L111-128'>Link to Source Code</a></td> </tr>
+
+
+
+
+				              </tbody>
+			            </table>
+					</div>
+				</div>							
+			</div>
+
+	<!--latest jQuery-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--main bootstrap js-->
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<!--custom js-->
+		<script src="js/custom.js" type="text/javascript"></script>
+	<!--preloader-->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#status").fadeOut();
+				$("#preloader").delay(350).fadeOut("slow");
+			})
+		</script>
+	<!--retina support-->
+		<script src="js/retina.js" type="text/javascript"></script>
+	<!--smooth scroll on page-->
+		<script src="js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+	<!--custom scrollbar-->
+		<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<!--parallax-->
+		<script src="js/jquery.stellar.js" type="text/javascript"></script>
+	<!--contact-->
+		<script src="js/jquery.form.js"></script>		
+	<!--gallery lightbox-->
+		<script src="js/bootstrap-lightbox.min.js"></script>
+	<!--google analytics-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44202711-1', 'learnasync.net');
+		  ga('send', 'pageview');
+
+		</script>
+		<script src="js/jquery.countTo.js"></script>
+		<script id="_webengage_script_tag" type="text/javascript">
+		  var _weq = _weq || {};
+		  _weq['webengage.licenseCode'] = '311c49c5';
+		  _weq['webengage.widgetVersion'] = "4.0";
+		  
+		  (function(d){
+		    var _we = d.createElement('script');
+		    _we.type = 'text/javascript';
+		    _we.async = true;
+		    _we.src = (d.location.protocol == 'https:' ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/widget/webengage-min-v-4.0.js";
+		    var _sNode = d.getElementById('_webengage_script_tag');
+		    _sNode.parentNode.insertBefore(_we, _sNode);
+		  })(document);
+		</script>	
+	</body>
+</html>

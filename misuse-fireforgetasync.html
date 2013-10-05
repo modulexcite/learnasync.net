@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Misuses - Fire-Forget async Methods - LearnAsync.NET</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A Study and Toolkit for Asynchronous Programming in C#">
+		<meta name="author" content="Semih Okur">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-lightbox.min.css" rel="stylesheet">
+		<link href="css/m-styles.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link rel="image_src" href="thumbnail.png">
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<base target="_blank">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+	<!--start navigation-->
+		<div class="navbar navbar-fixed-top" id="navigation">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<!-- <a href="#intro" class="brand"><img src="img/logo.png" alt=""></a> -->
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<li><a target="_self" href="index.html#intro">Home</a></li>
+							<li><a target="_self" href="index.html#empiricalstudy-top" onclick="$('.stats span').countTo();">Empirical Study</a></li>
+							<li><a target="_self" href="index.html#toolkit-top">Toolkit</a></li>
+							<li><a target="_self" href="index.html#team-top">Team</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<!--start services header-->
+		<section id="empiricalstudy-top">
+	<!--start empiricalstudy-desktop header-->
+			<section id="empiricalstudy-top-desktop" class="visible-desktop" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+	<!--start empiricalstudy-mobile header-->
+			<section id="empiricalstudy-top-mobile" class="hidden-desktop">
+				<h1 class="header">Empirical Study</h1>
+				<p class="header">a large-scale experiment</p>
+			</section>
+		</section>
+			<div class="container usage">		
+				<div class="row divide">
+					<div class="span12 table-responsive" style="overflow: auto">
+						<h1>Fire-Forget async Methods</h1>
+						<p> For now, we included all usages from only Github applications because Codeplex does not allow to highlight the code snippet in their source code viewer interface.
+
+						<p>If the link to the app is broken, it means that the application repository is removed from its hosting service (Github or Codeplex).</p>
+
+						<table class="table table-hover table-bordered">
+				              <thead>
+				                <tr>
+				                  <th style="width:78%">Method Name</th>
+				                  <th>Link</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+
+<tr><td>private async void LoadTracks ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/MainViewModel.cs#L71-78'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadPalestrantes ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/MainViewModel.cs#L80-91'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadPalestras ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/MainViewModel.cs#L93-103'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadTweets ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/PalestranteViewModel.cs#L48-55'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadPalestrante ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/PalestranteViewModel.cs#L57-66'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadPalestra (int tempId)</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/PalestraViewModel.cs#L91-95'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadTrack ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/TrackViewModel.cs#L48-57'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadPalestras ()</td><td><a href='http://www.github.com/AlbertoMonteiro/QCon12WindowsPhone/blob/f67aa2a004cf1aa30254a9c43b529ab8162baeea/QCon12.Mobile/ViewModel/TrackViewModel.cs#L59-66'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData (bool primeiraPagina = false)</td><td><a href='http://www.github.com/AlbertoMonteiro/VidaDeProgramadorWP7/blob/521ce9200ca513daa0834236ddedd9485e632cb9/VidaDeProgramador/ViewModel/MainViewModel.cs#L77-99'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadLocationsAsync ()</td><td><a href='http://www.github.com/alexpeta/LocationBasedReminderWP8/blob/f7d00822ade7a80667ff9aea5055bb6610cd14f0/LocationBasedNotifications/ViewModels/CreateReminderViewModel.cs#L125-150'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnGetGeolocationCommand (object obj)</td><td><a href='http://www.github.com/alexpeta/LocationBasedReminderWP8/blob/f7d00822ade7a80667ff9aea5055bb6610cd14f0/LocationBasedNotifications/ViewModels/LocationViewModel.cs#L90-100'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadDataAsyncFromRepository ()</td><td><a href='http://www.github.com/alexpeta/LocationBasedReminderWP8/blob/f7d00822ade7a80667ff9aea5055bb6610cd14f0/LocationBasedNotifications/ViewModels/ReminderViewModel.cs#L218-288'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInvoke (ScheduledTask task)</td><td><a href='http://www.github.com/alexpeta/LocationBasedReminderWP8/blob/f7d00822ade7a80667ff9aea5055bb6610cd14f0/ScheduledTaskAgent/ScheduledAgent.cs#L47-61'>Link to Source Code</a></td> </tr>
+<tr><td>public async void PrepareMasterObject ()</td><td><a href='http://www.github.com/Anthuan/TheOldReaderWP/blob/d63a2959e6023c06f99623fc7159268ccee90463/PhoneApp1/MainPage.xaml.cs#L44-62'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Authenticate ()</td><td><a href='http://www.github.com/Anthuan/TheOldReaderWP/blob/d63a2959e6023c06f99623fc7159268ccee90463/PhoneApp1/TheOldReader.cs#L137-156'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RefreshActiveItemAsync ()</td><td><a href='http://www.github.com/anttikajanus/ArcOrganization/blob/9288033801bbbfd5c53235a142f3a4c9b217550e/src/ArcOrganization/Hub/HubViewModel.cs#L35-45'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnActivate ()</td><td><a href='http://www.github.com/anttikajanus/ArcOrganization/blob/9288033801bbbfd5c53235a142f3a4c9b217550e/src/ArcOrganization/Infrastructure/ViewModels/ConductorViewModel.cs#L113-123'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnActivate ()</td><td><a href='http://www.github.com/anttikajanus/ArcOrganization/blob/9288033801bbbfd5c53235a142f3a4c9b217550e/src/ArcOrganization/Infrastructure/ViewModels/ScreenViewModel.cs#L99-109'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Login (string password)</td><td><a href='http://www.github.com/anttikajanus/ArcOrganization/blob/9288033801bbbfd5c53235a142f3a4c9b217550e/src/ArcOrganization/Login/LoginViewModel.cs#L113-120'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ChangeBasemap (ArcGISPortalItem portalItem)</td><td><a href='http://www.github.com/anttikajanus/ArcOrganization/blob/9288033801bbbfd5c53235a142f3a4c9b217550e/src/ArcOrganization/WepMap/WebMapViewModel.cs#L142-153'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoginAndNavigateAsync (string password)</td><td><a href='http://www.github.com/anttikajanus/Peruka/blob/99a48163b6791d840767ecd4d3591e44f55017e6/src/Peruka/Login/LoginViewModel.cs#L161-186'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoginAndNavigateAsync ()</td><td><a href='http://www.github.com/anttikajanus/Peruka/blob/99a48163b6791d840767ecd4d3591e44f55017e6/src/Peruka/SplashView/SplashViewModel.cs#L52-78'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnActivate ()</td><td><a href='http://www.github.com/anttikajanus/Peruka/blob/99a48163b6791d840767ecd4d3591e44f55017e6/src/Peruka/TrackRoute/TrackRouteViewModel.cs#L59-62'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadActiveItemsContentAsync (string message)</td><td><a href='http://www.github.com/anttikajanus/Peruka/blob/99a48163b6791d840767ecd4d3591e44f55017e6/src/Knet.Phone.Client/ViewModels/ConductorViewModel.cs#L116-125'>Link to Source Code</a></td> </tr>
+<tr><td>public async void newStatusAsync (string tweet, string latitude = "", string longitude = "")</td><td><a href='http://www.github.com/ApexHAB/apex-lumia/blob/47fb019f96e1fd3d06572a9e1ea1454a55645e20/ApexLumia/Twitter.cs#L44-62'>Link to Source Code</a></td> </tr>
+<tr><td>public async void uploadDocument (string json, string id = "")</td><td><a href='http://www.github.com/ApexHAB/apex-lumia/blob/47fb019f96e1fd3d06572a9e1ea1454a55645e20/ApexLumia/CouchInterface.cs#L61-77'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Init ()</td><td><a href='http://www.github.com/arielbh/BestMan/blob/319b825768dd53e442ca8538ef31c9646cd4099d/BestMan/BestManApp/ViewModels/InvitationsViewModel.cs#L40-46'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ReloadDataAsync ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/MainPage.xaml.cs#L44-49'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateFilter ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/CourseListViewModel.cs#L74-79'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PinCourseAsync (bool toggle)</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/CourseViewModel.cs#L58-73'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetPinnedStateAsync ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/CourseViewModel.cs#L75-79'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadCourseDataAsync (INavigationController controller)</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/EventViewModel.cs#L111-116'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadDepartmentGroupsAsync ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/MainViewModel.cs#L180-211'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateMyCoursesAsync (PinnedCourses pinnedCourses)</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/ViewModels/MainViewModel.cs#L213-286'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/NoppaClient/View/OpenBrowserCommand.cs#L20-37'>Link to Source Code</a></td> </tr>
+<tr><td>public async void TestGetAllOrganizations ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/UnitTests/NoppaAPITests.cs#L21-38'>Link to Source Code</a></td> </tr>
+<tr><td>public async void TestGetDepartment ()</td><td><a href='http://www.github.com/banjoh/noppawp8/blob/6f9b64b0050bf96723da9cd1109a7c9b5560407a/UnitTests/NoppaAPITests.cs#L40-53'>Link to Source Code</a></td> </tr>
+<tr><td>internal async void AttachImage (Microsoft.Phone.Tasks.PhotoResult e)</td><td><a href='http://www.github.com/bootlegrobot/awful2/blob/9894e6ea4de28ec0b1cfe9477cb2ccc058e392f8/wp/Awful/Awful.WP8/ViewModels/NewPrivateMessagePageViewModel.cs#L197-223'>Link to Source Code</a></td> </tr>
+<tr><td>internal async void AttachImage (Microsoft.Phone.Tasks.PhotoResult e)</td><td><a href='http://www.github.com/bootlegrobot/awful2/blob/9894e6ea4de28ec0b1cfe9477cb2ccc058e392f8/wp/Awful/Awful.WP8/ViewModels/ReplyViewModel.cs#L184-210'>Link to Source Code</a></td> </tr>
+<tr><td>public override async void LoadState (int? navigationParameter, Dictionary<string, object> pageState)</td><td><a href='http://www.github.com/brentedwards/Charmed/blob/25291e6205206df4b8c72a86e309d92a9065adda/Charmed.Sample.WP8/ViewModels/SplashViewModel.cs#L25-42'>Link to Source Code</a></td> </tr>
+<tr><td>public async static void Goto (string URI)</td><td><a href='http://www.github.com/bugsense/BugSense-WP8/blob//BugSense-WP8/../Shared/Internal/Browsers.cs#L13-63'>Link to Source Code</a></td> </tr>
+<tr><td>protected virtual async void Handle (Func<ITrello, Task> handler)</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/Services/Handlers/AbstractHandler.cs#L24-41'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Launch ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/AttachmentViewModel.cs#L36-44'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshLists ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/Boards/BoardListViewModel.cs#L141-154'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/CardDetailMembersViewModel.cs#L70-93'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/CardDetailOverviewViewModel.cs#L276-285'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/CardDetailPivotViewModel.cs#L69-88'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshNotifications ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/MyNotificationsViewModel.cs#L66-84'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshBoards ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/MyBoardsViewModel.cs#L58-65'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/Boards/BoardViewModel.cs#L82-96'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshCards ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/MyCardsViewModel.cs#L35-60'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/ChangeCardLabelsViewModel.cs#L36-58'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInitialize ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/ProfileViewModel.cs#L92-98'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnViewLoaded (object view)</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/SplashViewModel.cs#L41-65'>Link to Source Code</a></td> </tr>
+<tr><td>private async void AccessGranted (OAuthToken token)</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/SplashViewModel.cs#L95-110'>Link to Source Code</a></td> </tr>
+<tr><td>private async void AccessDenied ()</td><td><a href='http://www.github.com/Bunk/trellow/blob/63631637d7a1a7286f553db5c1de91b935222467/trello/ViewModels/SplashViewModel.cs#L112-123'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnLoadAction (NavigationContext navigationContext)</td><td><a href='http://www.github.com/Catrobat/CatrobatForWindows/blob/a1850dc0ddaab96c478778d56ac4173e82a4f757/Source/Master/Catrobat/IDEWindowsPhone/ViewModel/Main/ProjectImportViewModel.cs#L214-238'>Link to Source Code</a></td> </tr>
+<tr><td>private async void StartPlayerAction ()</td><td><a href='http://www.github.com/Catrobat/CatrobatForWindows/blob/a1850dc0ddaab96c478778d56ac4173e82a4f757/Source/Master/Catrobat/IDEWindowsPhone/ViewModel/Editor/EditorViewModel.cs#L507-510'>Link to Source Code</a></td> </tr>
+<tr><td>private async void startSTT ()</td><td><a href='http://www.github.com/cbauschk/TalkSee/blob/1a6d5bca07951279f9d092e2dcf5462cc3bdd432/Windows Phone 8/C#,C++/UI/CallStatusPage.xaml.cs#L75-144'>Link to Source Code</a></td> </tr>
+<tr><td>private async void StartProcess ()</td><td><a href='http://www.github.com/ChadMcCallum/ListenHere/blob/bee254f3105e7faa6fa322d1aa6c9a917bc69115/ListenHere/MainPage.xaml.cs#L34-53'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetCurrentLocationInfo ()</td><td><a href='http://www.github.com/chenkai/dribbble-for-windows-phone-8/blob/e63b55e0dfc364417a5b65981d57519b109b466b/MoCommon/Component/DirectLocationHelper.cs#L20-44'>Link to Source Code</a></td> </tr>
+<tr><td>public async void AsyncUpdateLockScreenImage (string imageUrlPath, bool isAppResource)</td><td><a href='http://www.github.com/chenkai/dribbble-for-windows-phone-8/blob/e63b55e0dfc364417a5b65981d57519b109b466b/MoCommon/Component/LockScreenHelper.cs#L20-44'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PerformRemovalAsync (Favorite item)</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/FavoritesViewModel.cs#L53-57'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RefreshDepartureInformationAsync ()</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/StationInfo/DepartureViewModel.cs#L38-57'>Link to Source Code</a></td> </tr>
+<tr><td>protected async void LoadStationAsync ()</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/StationInfo/StationInfoPivotPageViewModel.cs#L46-58'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PopulateMapAsync ()</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/Stations/MapNearbyStationsPageViewModel.cs#L40-58'>Link to Source Code</a></td> </tr>
+<tr><td>protected async void ContinueNearestSearchOnUiThread ()</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/Stations/NearbyStationsViewModel.cs#L58-89'>Link to Source Code</a></td> </tr>
+<tr><td>protected async void LoadHaltestellenAsync ()</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/Stations/StationsListViewModel.cs#L34-44'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SearchForMatchesAsync (string searchString)</td><td><a href='http://www.github.com/christophwille/viennarealtime/blob/82bca59cb1f0aa2dc7ddd4c2f172b577cb3afd90/Source/MundlTransit.WP8/ViewModels/Stations/StationsSearchViewModel.cs#L68-80'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPosition (LocationServiceAccuracy desiredAccuracy, Action<LocationServicePosition, Exception> locationResult)</td><td><a href='http://www.github.com/Cimbalino/Cimbalino-Phone-Toolkit/blob/9a7fdb158a73b18d71a4abe740ff9415caa1f8d7/src/Cimbalino.Phone.Toolkit.Location (WP8)/Services/LocationService.cs#L175-187'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPosition (LocationServiceAccuracy desiredAccuracy, TimeSpan maximumAge, TimeSpan timeout, Action<LocationServicePosition, Exception> locationResult)</td><td><a href='http://www.github.com/Cimbalino/Cimbalino-Phone-Toolkit/blob/9a7fdb158a73b18d71a4abe740ff9415caa1f8d7/src/Cimbalino.Phone.Toolkit.Location (WP8)/Services/LocationService.cs#L207-219'>Link to Source Code</a></td> </tr>
+<tr><td>internal async void DoUpdate (AppVersion availableUpdate)</td><td><a href='http://www.github.com/codenauts/HockeySDK-WindowsPhone/blob/3339f2cf13ed33eab31d5e7d3019384e3429636e/HockeySDK/UpdateManager.cs#L181-188'>Link to Source Code</a></td> </tr>
+<tr><td>public async void MakeTransaction ()</td><td><a href='http://www.github.com/cpmcgrath/Bankr/blob/119f564357c5933436e079e44c1ac1b5795d6c18/Bankr/ViewModels/Transfer/FinishTransferViewModel.cs#L52-67'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/cpmcgrath/Bankr/blob/119f564357c5933436e079e44c1ac1b5795d6c18/Bankr.Logic/Logic/DataRetriever.cs#L44-53'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadTransferAccounts ()</td><td><a href='http://www.github.com/cpmcgrath/Bankr/blob/119f564357c5933436e079e44c1ac1b5795d6c18/Bankr.Logic/Logic/DataRetriever.cs#L60-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Commands/SaveDriverCommand.cs#L57-75'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Commands/DeleteVehicleCommand.cs#L93-124'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Commands/DeleteDriverCommand.cs#L94-125'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Commands/DeleteTourCommand.cs#L109-140'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Commands/SaveVehicleCommand.cs#L58-76'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteCurrentImageAsync ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/Driver.cs#L59-61'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RestoreImageFromPath ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/Driver.cs#L63-71'>Link to Source Code</a></td> </tr>
+<tr><td>private async void StopTracking ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/LocationTracker.cs#L214-266'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteCurrentImageAsync ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/Vehicle.cs#L54-56'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RestoreImageFromPath ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/Vehicle.cs#L58-69'>Link to Source Code</a></td> </tr>
+<tr><td>private async void HandleChosenPhoto (string name, Stream data)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Pages/DriverCompositionPage.xaml.cs#L131-138'>Link to Source Code</a></td> </tr>
+<tr><td>private async void HandleChosenPhoto (string name, Stream data)</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Pages/VehicleCompositionPage.xaml.cs#L130-137'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ResolveCivicAddressesInternal ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/Tour.cs#L105-127'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RequestRoute ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Pages/TourDetailsPage.xaml.cs#L125-163'>Link to Source Code</a></td> </tr>
+<tr><td>public async void OnImportsSatisfied ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Data/LocalStorage.cs#L95-98'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/crystalbyte/asphalt/blob/c681eadd3c2af6a7824d9f3ace1af5235ed1e035/src/Crystalbyte.Asphalt/Contexts/AppContext.cs#L213-221'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeletePart2 ()</td><td><a href='http://www.github.com/Dartasien/WindowsPhoneEreaderProject/blob/b95c728a545a8734efba791a9784fa2833f29f2b/WPEreader/WPEreader/MainPage.xaml.cs#L96-100'>Link to Source Code</a></td> </tr>
+<tr><td>public async void PutFileInIsoStore ()</td><td><a href='http://www.github.com/Dartasien/WindowsPhoneEreaderProject/blob/b95c728a545a8734efba791a9784fa2833f29f2b/WPEreader/WPEreader/ViewModels/BooksModel.cs#L109-113'>Link to Source Code</a></td> </tr>
+<tr><td>async void InitializeVoiceCommands ()</td><td><a href='http://www.github.com/DeaDiana/WindowsPhone/blob/cb6b104e55b0e958bf8fe5936e6cc7d044c702fe/Joker2/Joker2/MainPage.xaml.cs#L43-56'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ReproduceSpeech (string templatePth, object currentText)</td><td><a href='http://www.github.com/DeaDiana/WindowsPhone/blob/cb6b104e55b0e958bf8fe5936e6cc7d044c702fe/Joker2/Joker2/MainPage.xaml.cs#L120-137'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RecognizeCommand ()</td><td><a href='http://www.github.com/DeaDiana/WindowsPhone/blob/cb6b104e55b0e958bf8fe5936e6cc7d044c702fe/Joker2/Joker2/MainPage.xaml.cs#L144-229'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadStations ()</td><td><a href='http://www.github.com/dend/beem/blob/38befb2f5921f3440ca919e917c4533100c4e37d/Beem/Views/MainPage.xaml.cs#L68-92'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CheckCurrentPlayingState ()</td><td><a href='http://www.github.com/dend/beem/blob/38befb2f5921f3440ca919e917c4533100c4e37d/Beem/Views/StationPlayer.xaml.cs#L122-166'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnUserAction (BackgroundAudioPlayer player, AudioTrack track, UserAction action, object param)</td><td><a href='http://www.github.com/dend/beem/blob/38befb2f5921f3440ca919e917c4533100c4e37d/Beem.AudioAgent/AudioPlayer.cs#L113-155'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Navigate ( string viewName, XParameters parameters )</td><td><a href='http://www.github.com/Digillect/mvvm-wp/blob/e2bd8c3be55014c354dc46df3805ebb6e60b2dd2/src/Digillect.Mvvm.WindowsPhone/Services/NavigationService.cs#L155-192'>Link to Source Code</a></td> </tr>
+<tr><td>private async void InternalLoadData ( DataLoadReason reason )</td><td><a href='http://www.github.com/Digillect/mvvm-wp/blob/e2bd8c3be55014c354dc46df3805ebb6e60b2dd2/src/Digillect.Mvvm.WindowsPhone/UI/ViewModelPage.cs#L173-204'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Navigate ( string viewName, XParameters parameters )</td><td><a href='http://www.github.com/Digillect/mvvm-wp/blob/e2bd8c3be55014c354dc46df3805ebb6e60b2dd2/src/Digillect.Mvvm.WindowsPhone/Services/NavigationService.cs#L155-192'>Link to Source Code</a></td> </tr>
+<tr><td>private async void InternalLoadData ( DataLoadReason reason )</td><td><a href='http://www.github.com/Digillect/mvvm-wp/blob/e2bd8c3be55014c354dc46df3805ebb6e60b2dd2/src/Digillect.Mvvm.WindowsPhone/UI/ViewModelPage.cs#L173-204'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TestLogin ()</td><td><a href='http://www.github.com/dobroezlo/MetroLepra/blob/d33a0ef577fff4f5820344d7820840809e5d3817/MetroLepra/Lab/MainPage.xaml.cs#L51-64'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnLogin ()</td><td><a href='http://www.github.com/dobroezlo/MetroLepra/blob/d33a0ef577fff4f5820344d7820840809e5d3817/MetroLepra/MetroLepra.App/ViewModel/LoginViewModel.cs#L119-140'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Initialize ()</td><td><a href='http://www.github.com/dotnetautor/WP8Kochbuch/blob/54445117cdbc2afd05f33f0946e6bfbd165ee2f8/Buch.Beispiele/Kapitel 08/01 PhotoCamera/05 LiveEffect/Pages/LensePage.xaml.cs#L92-154'>Link to Source Code</a></td> </tr>
+<tr><td>private async void AutoFocus ()</td><td><a href='http://www.github.com/dotnetautor/WP8Kochbuch/blob/54445117cdbc2afd05f33f0946e6bfbd165ee2f8/Buch.Beispiele/Kapitel 08/01 PhotoCamera/05 LiveEffect/Pages/LensePage.xaml.cs#L177-185'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TakePicture ()</td><td><a href='http://www.github.com/dotnetautor/WP8Kochbuch/blob/54445117cdbc2afd05f33f0946e6bfbd165ee2f8/Buch.Beispiele/Kapitel 08/01 PhotoCamera/05 LiveEffect/Pages/LensePage.xaml.cs#L187-210'>Link to Source Code</a></td> </tr>
+<tr><td>public override async void OnNavigatedTo ()</td><td><a href='http://www.github.com/EgorBo/MvvmNavigationToolkit/blob/adf2827532440eba1d2cedea64e8b84ef8c07035/src/MvvmNavigationToolkit.WindowsPhone.Sample/ViewModels/NotesViewModel.cs#L11-26'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadAvailability (string stopId)</td><td><a href='http://www.github.com/ericsk/taipei-youbike-wp/blob/72bdeca9ee8074bddbe14aef0edd47376ee81c74/Taipei YouBike WP8/BikeStopPage.xaml.cs#L69-107'>Link to Source Code</a></td> </tr>
+<tr><td>private async void FoundNear ()</td><td><a href='http://www.github.com/ericsk/taipei-youbike-wp/blob/72bdeca9ee8074bddbe14aef0edd47376ee81c74/Taipei YouBike WP8/MainPage.xaml.cs#L210-308'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Tracking ()</td><td><a href='http://www.github.com/ericsk/taipei-youbike-wp/blob/72bdeca9ee8074bddbe14aef0edd47376ee81c74/Taipei YouBike WP8/MapsViewPage.xaml.cs#L104-149'>Link to Source Code</a></td> </tr>
+<tr><td>async private void LoadData ()</td><td><a href='http://www.github.com/eTilbudsavis/native-windows-phone-sdk/blob/231feb7e5bea2dfbb4c341875b6ee7c8d71ec3c1/EtaSampleApp/ViewModels/StoreDetailsViewModel.cs#L59-62'>Link to Source Code</a></td> </tr>
+<tr><td>async private void Initialize ()</td><td><a href='http://www.github.com/eTilbudsavis/native-windows-phone-sdk/blob/231feb7e5bea2dfbb4c341875b6ee7c8d71ec3c1/EtaSampleApp/Views/MainPage.xaml.cs#L47-56'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetAwayModeAsync (bool isAway)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest/MainPage/NestViewModel.cs#L351-361'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetFanModeAsync (FanMode fanMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest/MainPage/NestViewModel.cs#L363-376'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetHvacModeAsync (HvacMode hvacMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest/MainPage/NestViewModel.cs#L378-391'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RetryAfterErrorAsync ()</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest/MainPage/NestViewModel.cs#L426-428'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnTimerTick (object state)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest/Services/StatusUpdaterService.cs#L42-44'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetAwayModeAsync (bool isAway)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.Test/../WPNest/MainPage/NestViewModel.cs#L351-361'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetFanModeAsync (FanMode fanMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.Test/../WPNest/MainPage/NestViewModel.cs#L363-376'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetHvacModeAsync (HvacMode hvacMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.Test/../WPNest/MainPage/NestViewModel.cs#L378-391'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RetryAfterErrorAsync ()</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.Test/../WPNest/MainPage/NestViewModel.cs#L426-428'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnTimerTick (object state)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.Test/../WPNest/Services/StatusUpdaterService.cs#L42-44'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetAwayModeAsync (bool isAway)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.WP8/../WPNest/MainPage/NestViewModel.cs#L351-361'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetFanModeAsync (FanMode fanMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.WP8/../WPNest/MainPage/NestViewModel.cs#L363-376'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetHvacModeAsync (HvacMode hvacMode)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.WP8/../WPNest/MainPage/NestViewModel.cs#L378-391'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RetryAfterErrorAsync ()</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.WP8/../WPNest/MainPage/NestViewModel.cs#L426-428'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnTimerTick (object state)</td><td><a href='http://www.github.com/GaryJohnson/wpnest/blob/df25a46921e120806d772438b5f2459a8d6564f3/WPNest/WPNest.WP8/../WPNest/Services/StatusUpdaterService.cs#L42-44'>Link to Source Code</a></td> </tr>
+<tr><td>private async void AuthenticateUserResponse ()</td><td><a href='http://www.github.com/gep13/VBForums-Viewer/blob/1b11a7a9cf9d11ea02bd619cb630d343acde3eb6/Gep13.WindowsPhone.VBForumsMetro.Client/ViewModels/AddAccountViewModel.cs#L315-335'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetProfile ()</td><td><a href='http://www.github.com/gep13/VBForums-Viewer/blob/1b11a7a9cf9d11ea02bd619cb630d343acde3eb6/Gep13.WindowsPhone.VBForumsMetro.Client/ViewModels/ProfileViewModel.cs#L187-203'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnInitialize ()</td><td><a href='http://www.github.com/giggio/multassociais-windowsapps/blob/65a420f2115a635f30da560c1202517d4b9f411f/src/MultasSociais/MultasSociais.WinPhone8App/ViewModels/MainViewModel.cs#L22-42'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SpeakNotifications ()</td><td><a href='http://www.github.com/gjulianm/Ocell/blob/ab7792463d715ffbd2dcc06061d25685e3662914/Ocell.UI/Ocell.Phone8/../Ocell.Phone7/Pages/Elements/NotificationsModel.cs#L69-85'>Link to Source Code</a></td> </tr>
+<tr><td>private async void StartSpeechToText ()</td><td><a href='http://www.github.com/gjulianm/Ocell/blob/ab7792463d715ffbd2dcc06061d25685e3662914/Ocell.UI/Ocell.Phone8/../Ocell.Phone7/Pages/NewTweet.xaml.cs#L186-199'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/ianhong/windows.phone.apps/blob/b66276aff544e6262f17e99dbe91067e32ddffcb/ContosoCookBoookPhone/ContosoCookBoookPhone/ViewModels/MainViewModel.cs#L35-56'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/ianhong/windows.phone.apps/blob/b66276aff544e6262f17e99dbe91067e32ddffcb/ContosoCookBoookPhone.PL/ContosoCookBoookPhone/ViewModels/MainViewModel.cs#L35-56'>Link to Source Code</a></td> </tr>
+<tr><td>async public void markAsRead (int itemId)</td><td><a href='http://www.github.com/icewind1991/wp-news/blob/987d630d2a6e3892600d9d486a0e2dd18d44b504/News/Models/Server.cs#L53-57'>Link to Source Code</a></td> </tr>
+<tr><td>async public void markAsUnRead (int itemId)</td><td><a href='http://www.github.com/icewind1991/wp-news/blob/987d630d2a6e3892600d9d486a0e2dd18d44b504/News/Models/Server.cs#L59-63'>Link to Source Code</a></td> </tr>
+<tr><td>async public void loadFolder (int i, int offset)</td><td><a href='http://www.github.com/icewind1991/wp-news/blob/987d630d2a6e3892600d9d486a0e2dd18d44b504/News/ViewModels/MainViewModel.cs#L155-187'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SendGuideAsync ([ReadOnlyArray] byte[] imageBytes)</td><td><a href='http://www.github.com/iFixit/ifixit-microsoft/blob/a045ba8be0ca4245539be3af802d378371a886dc/iFixit.WP8.UI/../Shared/PeerConnector.cs#L102-142'>Link to Source Code</a></td> </tr>
+<tr><td>async void StartReceiveGuide (DataReader socketReader)</td><td><a href='http://www.github.com/iFixit/ifixit-microsoft/blob/a045ba8be0ca4245539be3af802d378371a886dc/iFixit.WP8.UI/../Shared/PeerConnector.cs#L183-232'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SendGuideAsync ([ReadOnlyArray] byte[] imageBytes)</td><td><a href='http://www.github.com/iFixit/ifixit-microsoft/blob/a045ba8be0ca4245539be3af802d378371a886dc/iFixit.WP8.UI/Services/SimplePeerConnector.cs#L94-134'>Link to Source Code</a></td> </tr>
+<tr><td>async void StartReceiveGuide (DataReader socketReader)</td><td><a href='http://www.github.com/iFixit/ifixit-microsoft/blob/a045ba8be0ca4245539be3af802d378371a886dc/iFixit.WP8.UI/Services/SimplePeerConnector.cs#L175-224'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnInvoke (ScheduledTask task)</td><td><a href='http://www.github.com/isaacOjeda/Tareas/blob/2ecc716b53ad1ffd1bfd14cda17a878d955bc68c/Semana 3/LiveImages/LiveImages/LiveImages.ScheduledTask/ScheduledAgent.cs#L49-99'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Speak (string text)</td><td><a href='http://www.github.com/isaacOjeda/Tareas/blob/2ecc716b53ad1ffd1bfd14cda17a878d955bc68c/Semana 3/VoiceTraslator/VoiceTraslator/MainPage.xaml.cs#L41-51'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateInfo ()</td><td><a href='http://www.github.com/jackbrennan/network-info/blob/f2b6c74a9a1bbab9b099cd3f91358570a1ce641c/PhoneApp1/MainPage.xaml.cs#L24-31'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetApps ()</td><td><a href='http://www.github.com/jamesseanwright/appfog-wp7/blob/60575399791196894c7bec4a3e0cb27443aba539/AppFogWP7/ViewModel/AppsViewModel.cs#L43-49'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetInfo ()</td><td><a href='http://www.github.com/jamesseanwright/appfog-wp7/blob/60575399791196894c7bec4a3e0cb27443aba539/AppFogWP7/ViewModel/InfoViewModel.cs#L60-66'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadMyKanboxFiles ()</td><td><a href='http://www.github.com/jarvisji/kanboxwp/blob/acb86e86007547becfcf9f698f5f230ae4b60ef5/kanboxwp/kanboxwp/ViewModels/MainViewModel.cs#L63-79'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadFolderFiles (string path)</td><td><a href='http://www.github.com/jarvisji/kanboxwp/blob/acb86e86007547becfcf9f698f5f230ae4b60ef5/kanboxwp/kanboxwp/ViewModels/MainViewModel.cs#L85-102'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshTokenIfNeed ()</td><td><a href='http://www.github.com/jarvisji/kanboxwp/blob/acb86e86007547becfcf9f698f5f230ae4b60ef5/kanboxwp/kanboxwp/ViewModels/MainViewModel.cs#L186-193'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void UploadToSkydrive (string fileName, MainViewModel viewModel)</td><td><a href='http://www.github.com/jasonkuster/MetroLooper/blob/344443202f9f92e7a606fe6331754cc5d908c4c9/MetroLooper/Helpers/FileHelper.cs#L33-53'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Record_Go (object state)</td><td><a href='http://www.github.com/jasonkuster/MetroLooper/blob/344443202f9f92e7a606fe6331754cc5d908c4c9/MetroLooper/Model/RecordingManager.cs#L54-93'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TryBluetooth ()</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L118-146'>Link to Source Code</a></td> </tr>
+<tr><td>async private void Write (string str)</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L148-152'>Link to Source Code</a></td> </tr>
+<tr><td>async private void WaitForData (StreamSocket socket)</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L162-190'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DoSomethingWithReceivedString (string buffer)</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L196-262'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ToggleActivity ()</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L536-607'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LaunchGpxFileAssociation (string fileName)</td><td><a href='http://www.github.com/jhalbrecht/Walker-Wp8/blob/df5fc58bce07eeb3eb37035c4cb3c3ee1b66c50b/Walker/Walker.Wp8/Service/WalkerDataService.cs#L630-661'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DoButtonConnect ()</td><td><a href='http://www.github.com/jhalbrecht/WindowsPhone8i-Racer/blob/ad27d82c0e1220497597f93c6be2ae01d3db57fc/EightRacer/ViewModel/MainViewModel.cs#L142-171'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DoButtonDisconnect ()</td><td><a href='http://www.github.com/jhalbrecht/WindowsPhone8i-Racer/blob/ad27d82c0e1220497597f93c6be2ae01d3db57fc/EightRacer/ViewModel/MainViewModel.cs#L173-187'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PopulatePairedDevicesListBox ()</td><td><a href='http://www.github.com/jhalbrecht/WindowsPhone8i-Racer/blob/ad27d82c0e1220497597f93c6be2ae01d3db57fc/EightRacer/ViewModel/MainViewModel.cs#L198-215'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CheckBlueToothOn ()</td><td><a href='http://www.github.com/jhalbrecht/WindowsPhone8i-Racer/blob/ad27d82c0e1220497597f93c6be2ae01d3db57fc/EightRacer/ViewModel/MainViewModel.cs#L316-332'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetLocation ()</td><td><a href='http://www.github.com/jlchapa/DrinkItUpWP/blob/8da5d2d38546ba1678f4901e0d57df2ba552b777/DrinkItUp/DrinkItUp/sdkMVVMCS/Home.xaml.cs#L176-223'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getNavigation ()</td><td><a href='http://www.github.com/jlchapa/DrinkItUpWP/blob/8da5d2d38546ba1678f4901e0d57df2ba552b777/DrinkItUp/DrinkItUp/sdkMVVMCS/Test.xaml.cs#L70-105'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Initialize ()</td><td><a href='http://www.github.com/joshtwist/Votabl/blob/ffddb888f985e45649cb75f29b360a5de9e7aee8/Source/WindowsPhone8/Votabl/MainViewModel.cs#L127-140'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadData ()</td><td><a href='http://www.github.com/Kinnara/WPToolkit/blob/aeb6459bbf59a8a4aec1596c93a3222126f59fba/Microsoft.Phone.Controls.Toolkit.WP8/ListView/ListView.cs#L1455-1467'>Link to Source Code</a></td> </tr>
+<tr><td>private async void HandleSpeech ()</td><td><a href='http://www.github.com/Kinnara/WPToolkit/blob/aeb6459bbf59a8a4aec1596c93a3222126f59fba/Microsoft.Phone.Controls.Toolkit.WP8/SpeechTextBox/SpeechTextBox.cs#L72-151'>Link to Source Code</a></td> </tr>
+<tr><td>private async void BT2Arduino_Send (string WhatToSend)</td><td><a href='http://www.github.com/lanceseidman/Arduino-Bluetooth-WinPhone8/blob/c7998ec34c1b31318ff64b118634c646b8d3c83e/Windows Phone 8/Arduino2WP8/Arduino2WP8/MainPage.xaml.cs#L128-144'>Link to Source Code</a></td> </tr>
+<tr><td>private async void BT2Arduino_Send (string WhatToSend)</td><td><a href='http://www.github.com/lanceseidman/iRacer_MotionControl/blob/27fb0e3c2532b4fe3b3a4168cd71dbfe25004945/Arduino2WP8/MainPage.xaml.cs#L250-270'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Connect (PeerInformation peerInformation)</td><td><a href='http://www.github.com/linzhengcode/WindowsPhone8/blob/28eb9d9281e96447e77bb43f168c016b6a69d69e/Soure/Lesson12/BluetoothApp2AppDemo/BluetoothApp2AppDemo/MainPage.xaml.cs#L50-63'>Link to Source Code</a></td> </tr>
+<tr><td>async void ReadMessage ()</td><td><a href='http://www.github.com/linzhengcode/WindowsPhone8/blob/28eb9d9281e96447e77bb43f168c016b6a69d69e/Soure/Lesson12/StreamSocketDemo/StreamSocketDemo/MainPage.xaml.cs#L110-122'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetCoordinates ()</td><td><a href='http://www.github.com/linzhengcode/WindowsPhone8/blob/28eb9d9281e96447e77bb43f168c016b6a69d69e/Soure/Lesson14/MapControlDemo/MapControlDemo/MainPage.xaml.cs#L38-73'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetCoordinates ()</td><td><a href='http://www.github.com/linzhengcode/WindowsPhone8/blob/28eb9d9281e96447e77bb43f168c016b6a69d69e/Soure/Lesson14/MapLineDemo/MapLineDemo/MainPage.xaml.cs#L60-92'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetCoordinates ()</td><td><a href='http://www.github.com/linzhengcode/WindowsPhone8/blob/28eb9d9281e96447e77bb43f168c016b6a69d69e/Soure/Lesson15/BackgroundLocationTrackerDemo/BackgroundLocationTrackerDemo/MainPage.xaml.cs#L49-75'>Link to Source Code</a></td> </tr>
+<tr><td>private static async void updateTile (Uri uri)</td><td><a href='http://www.github.com/lucaswerkmeister/wp_geohashing/blob/1ba2da25906a6ea74b87c936b6d157af47d0d5e7/Base/Tiles.cs#L74-77'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInvoke (ScheduledTask task)</td><td><a href='http://www.github.com/lucaswerkmeister/wp_geohashing/blob/1ba2da25906a6ea74b87c936b6d157af47d0d5e7/ScheduledAgent/ScheduledAgent.cs#L62-72'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DownloadPictures (SkydriveAlbum albumItem)</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/AlbumDetailPage.xaml.cs#L75-81'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UploadPicture (PhotoResult e)</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/AlbumDetailPage.xaml.cs#L220-248'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetAlubmData ()</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/AlbumPage.xaml.cs#L63-72'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetAlbumPicture (SkydriveAlbum albumItem)</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/AlbumPage.xaml.cs#L102-115'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Create_new_album ()</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/AlbumPage.xaml.cs#L257-265'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetProfilePicture ()</td><td><a href='http://www.github.com/madsum/SkyPhoto_WP8/blob/4d11661c2812d5da2c4533e3a9814e819daf0db5/MainPage.xaml.cs#L89-94'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ResolveUserIdAndPlatform (string url, IUserIdAndPlatformResolver userIdAndPlatformResolver)</td><td><a href='http://www.github.com/mikkoviitala/battlelogmobile/blob/fc0a9eca3990c2e7af8a17a99f0e2996f62c1358/BattlelogMobile.Core/Service/DownloadService.cs#L58-98'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ShowMyLocationOnTheMap ()</td><td><a href='http://www.github.com/MirageMK/RMWindowsPhone8/blob/2fcb22ba241ff8fff118b953e23344c6ea65d304/RMWindowsPhone8/LocateMePage.xaml.cs#L25-56'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadNews ()</td><td><a href='http://www.github.com/MKSofttX/MkSofttXRepo/blob/06dd28690c3c6fda8b904bbd7166b279908b0861/MyRecyclingApp/MainPage.xaml.cs#L54-67'>Link to Source Code</a></td> </tr>
+<tr><td>public async void AttemptNokiaLookup ()</td><td><a href='http://www.github.com/nokia-entertainment/Shuffler.fm/blob/65ef8554610d0e6e8ca741afa9d8ee8c228759ac/Api/Artist.cs#L57-105'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetNearbyArtists ()</td><td><a href='http://www.github.com/nokia-entertainment/wp-api-client/blob/bcd314de7a159f213091ecf269df8b82e0e1fd0d/BandsAround/MainPage.xaml.cs#L144-203'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Open (string peer)</td><td><a href='http://www.github.com/nothingmn/WindowsPhone.Common/blob/8f901921d1f1dd5de9afb26432815bea485598b5/WindowsPhone.Common/Communication/BluetoothConnection.cs#L30-34'>Link to Source Code</a></td> </tr>
+<tr><td>public async static void ConnectAsync (PeerInformation peerInfo)</td><td><a href='http://www.github.com/noxo/bluetoothchat-wp8-winrt/blob/7f11005abae3d90f0cc7662fef53acaec14c8e5a/BluetoothChatWP8/PhoneApp1/ChatConnection.cs#L58-110'>Link to Source Code</a></td> </tr>
+<tr><td>public async static void SendChatMessageAsync (ChatMessage msg)</td><td><a href='http://www.github.com/noxo/bluetoothchat-wp8-winrt/blob/7f11005abae3d90f0cc7662fef53acaec14c8e5a/BluetoothChatWP8/PhoneApp1/ChatConnection.cs#L172-188'>Link to Source Code</a></td> </tr>
+<tr><td>private async void repeatTimer_Tick (object state)</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/ApiRelated/TaskRelated/TaskExecutor.cs#L201-212'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void ExecuteTask (IRequestTask task, Action<ITaskResult> callback = null, string taskContext = null)</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/ApiRelated/TaskRelated/TaskManager.cs#L36-44'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void ExecuteTask (IRequestTask task, ITaskParameters taskParams)</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/ApiRelated/TaskRelated/TaskManager.cs#L51-57'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SendMessageToServer ()</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/ViewModels/BaseConversationViewModel.cs#L431-481'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PhotoChooser_Completed (object sender, PhotoResult e)</td><td><a href='http://www.github.com/Nznoonee/VKAgent/blob/9194c0e6ce668e0cd177e6d097cf87dd097e8042/VKAgent/ViewModels/SettingsPageViewModel.cs#L198-241'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Check ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/S1Nyan.App.WP7/Model/ServerItem.cs#L21-48'>Link to Source Code</a></td> </tr>
+<tr><td>private async void OnReLoginMsg (NotificationMessage<S1NyanViewModelBase> msg)</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/S1Nyan.App.WP7/ViewModel/UserViewModel.cs#L42-52'>Link to Source Code</a></td> </tr>
+<tr><td>internal async void InitLogin ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/S1Nyan.App.WP7/ViewModel/UserViewModel.cs#L179-195'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PrepareImage ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/S1Nyan.App.WP7/Views/ImageSourceProxy.cs#L113-143'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PrepareImage ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/../S1Nyan.App.WP7/Views/ImageSourceProxy.cs#L113-143'>Link to Source Code</a></td> </tr>
+<tr><td>public async void TestServer ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/ServerListViewModel.cs#L181-213'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DoLogin ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/UserTestViewModel.cs#L86-100'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TestReply ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/UserTestViewModel.cs#L223-226'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TestWrongVerify ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/UserTestViewModel.cs#L228-232'>Link to Source Code</a></td> </tr>
+<tr><td>private async void TestWrongID ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/UserTestViewModel.cs#L234-238'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DoTest ()</td><td><a href='http://www.github.com/obiwang/S1Nyan/blob/de1f3885d38e7a7ba48ebabf9bcabadf254064c9/UnderDev/ViewModel/UserTestViewModel.cs#L240-275'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/MainPage.xaml.cs#L132-208'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetLocation ()</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/MainPage.xaml.cs#L210-230'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadImages ()</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/MainPage.xaml.cs#L376-405'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SayQuestion ()</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/AnswerQuestion.xaml.cs#L74-83'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CameraCaptureTaskCompleted (object sender, PhotoResult e)</td><td><a href='http://www.github.com/orsko/WP8HF/blob/74fbaf41e8bc8266d939c7b9effc5cbda0ac996c/WP8HF/AnswerQuestion.xaml.cs#L160-281'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getCharts ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/ChartsPage.xaml.cs#L36-53'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getAlbumInfo (string artistName, string albumName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/albumInfoPage.xaml.cs#L45-69'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getArtistInfo (string artistName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/artistInfoPage.xaml.cs#L117-141'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getArtistList (string searchText)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L258-279'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getAlbumList (string searchText)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L281-302'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getTrackList (string searchText)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L304-325'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getTagList (string searchText)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L327-348'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreArtists ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L353-373'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreAlbums ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L375-395'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreTracks ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L397-417'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreTags ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/SearchPage.xaml.cs#L419-439'>Link to Source Code</a></td> </tr>
+<tr><td>private async void login ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/LoginPage.xaml.cs#L33-47'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getTagInfo (string tagName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/tagInfoPage.xaml.cs#L45-65'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void scrobble (string artistName, string trackName, DateTime timestamp = default(DateTime))</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/API/track.cs#L81-98'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void scrobble (List<trackInfo> tracks)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/API/track.cs#L100-122'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void updateNowPlaying (string artistName, string trackName, string albumName = null)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/API/track.cs#L124-137'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void love (string trackName, string artistName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/API/track.cs#L139-150'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void unlove (string trackName, string artistName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/API/track.cs#L152-163'>Link to Source Code</a></td> </tr>
+<tr><td>private async void getTrackInfo (string artistName, string trackName)</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/trackInfoPage.xaml.cs#L45-81'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreRecommendedArtists ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/userInfoPage.xaml.cs#L60-74'>Link to Source Code</a></td> </tr>
+<tr><td>private async void loadMoreTracks ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/userInfoPage.xaml.cs#L104-118'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateUser ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/userInfoPage.xaml.cs#L133-143'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetRecommendedArtists ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/userInfoPage.xaml.cs#L153-166'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetRecentTracks ()</td><td><a href='http://www.github.com/passick/wp.fm/blob/80d5150227bb3e6b8f78bb7672914619c4a65852/lastfm/Info pages/userInfoPage.xaml.cs#L168-181'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExchangeAuthorizationCode (string authorizationCode)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/AuthorizationViewModel.cs#L122-154'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExecuteInitialLoad ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L260-300'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ChangeStaredStatus (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L320-363'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshFiles ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L415-418'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteFile (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L434-441'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteFiles (IEnumerable<GoogleFileViewModel> filesToDelete)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L443-456'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateNewFolder ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/NewFolderViewModel.cs#L82-113'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RenameFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/RenameFileViewModel.cs#L88-121'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DownloadFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP7/ViewModel/ViewFileViewModel.cs#L151-184'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExchangeAuthorizationCode (string authorizationCode)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/AuthorizationViewModel.cs#L122-154'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ExecuteInitialLoad ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L260-300'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ChangeStaredStatus (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L320-363'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RefreshFiles ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L415-418'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteFile (GoogleFileViewModel fileViewModel)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L434-441'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DeleteFiles (IEnumerable<GoogleFileViewModel> filesToDelete)</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ExplorerViewModel.cs#L443-456'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateNewFolder ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/NewFolderViewModel.cs#L82-113'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RenameFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/RenameFileViewModel.cs#L88-121'>Link to Source Code</a></td> </tr>
+<tr><td>private async void DownloadFile ()</td><td><a href='http://www.github.com/PedroLamas/GDrive/blob/c34e610dab1874da2fe036dd51ca87ad574a372e/PedroLamas.GDrive.WP8/../PedroLamas.GDrive.WP7/ViewModel/ViewFileViewModel.cs#L151-184'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadProductsAsync_Should_Load_Data_FromDb ()</td><td><a href='http://www.github.com/piccoloaiutante/WP8TestingExample/blob/c5180e6a992d81c044d23314ff179fefe4e541c8/OrangeCode.WpReborn.SQLiteTestingApp/Services/DbServiceFixture.cs#L35-42'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void Configure ()</td><td><a href='http://www.github.com/piccoloaiutante/WP8TestingExample/blob/c5180e6a992d81c044d23314ff179fefe4e541c8/OangeCode.Wpreborn.SQLIteApp/ApplicationBootstrapper.cs#L16-36'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Initialize ()</td><td><a href='http://www.github.com/piccoloaiutante/WP8TestingExample/blob/c5180e6a992d81c044d23314ff179fefe4e541c8/OangeCode.Wpreborn.SQLIteApp/ViewModels/MainViewModel.cs#L30-33'>Link to Source Code</a></td> </tr>
+<tr><td>public async void RelocateAndRedrawMe ()</td><td><a href='http://www.github.com/Pinultimate/Pinultimate_Windows_Phone/blob/ba5771a2924c0ca4b5c8ba4df0d873304b81cc54/Pinultimate_Windows_Phone/Data/TrendMapViewModel.cs#L334-350'>Link to Source Code</a></td> </tr>
+<tr><td>private async void InitializeMeIndicatorAndLayers ()</td><td><a href='http://www.github.com/Pinultimate/Pinultimate_Windows_Phone/blob/ba5771a2924c0ca4b5c8ba4df0d873304b81cc54/Pinultimate_Windows_Phone/Data/TrendMapViewModel.cs#L352-391'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Notify ()</td><td><a href='http://www.github.com/pixeltucker/SpeedoPlus/blob/1d4b9ad32f579b29c31fd4c1c3d99e94e8d7e8b5/Speedo/SpeedAlert.cs#L97-100'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ApplyFilterToBackgroundImageAsync (BitmapImage sourceImage)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/Chrome/PhotoBackgroundView.xaml.cs#L75-96'>Link to Source Code</a></td> </tr>
+<tr><td>public virtual async void DeleteFilterAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/ProFX/Filters/FilterBase.cs#L59-79'>Link to Source Code</a></td> </tr>
+<tr><td>protected async void UpdatePreviewAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/ProFX/Filters/FilterBase.cs#L81-102'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateCam (CameraSensorLocation camType)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/ProCamera/ProCameraPageCoreExtension.cs#L35-58'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CapturePhoto ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/ProCamera/ProCameraPageCoreExtension.cs#L60-75'>Link to Source Code</a></td> </tr>
+<tr><td>private async void PerformFocus (int fid, Windows.Foundation.Point? point = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged/Plugins/ProCamera/ProCameraPageCoreExtension.cs#L118-131'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetDiscoveryStreamAsync (Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreDiscoveryExtension.cs#L18-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupInfoAsync (string groupId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreGroupExtension.cs#L15-62'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupPhotosAsync (string groupId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreGroupExtension.cs#L66-121'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetRequestTokenAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreOAuthExtension.cs#L100-140'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetAccessTokenAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreOAuthExtension.cs#L142-197'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetEXIFAsync (string photoId)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoExtension.cs#L23-80'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SearchPhotoAsync (string searchSessionId, string query = null, string tags = null, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreSearchExtension.cs#L15-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void SearchGroupsAsync (string searchSessionId, string query = null, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreSearchExtension.cs#L70-117'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoSetListAsync (string userId)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoSetExtension.cs#L19-55'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoSetPhotosAsync (string setId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCorePhotoSetExtension.cs#L59-114'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPopularTagListAsync ()</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreTagExtension.cs#L15-49'>Link to Source Code</a></td> </tr>
+<tr><td>public async void UploadPhoto (string sessionId, string fileName, Stream stream, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUploadExtension.cs#L19-83'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetPhotoStreamAsync (string userId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUserExtension.cs#L18-82'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetGroupListAsync (string userId, Dictionary<string, string> parameters = null)</td><td><a href='http://www.github.com/powerytg/indulged-flickr/blob/545f7ab969d4928b0b4f1d18abf0adbee55d4eda/Indulged/Indulged.API/Anaconda/AnacondaCoreUserExtension.cs#L86-140'>Link to Source Code</a></td> </tr>
+<tr><td>private async void GetFlows ()</td><td><a href='http://www.github.com/RallySoftware/Flowdock.NET/blob/b80137d520b531f355c50563b14261be7a82ba8f/Flowdock/Flowdock/ViewModels/LobbyViewModel.cs#L20-35'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadFlow ()</td><td><a href='http://www.github.com/RallySoftware/Flowdock.NET/blob/b80137d520b531f355c50563b14261be7a82ba8f/Flowdock/Flowdock/ViewModels/FlowViewModel.cs#L131-157'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Execute (object parameter)</td><td><a href='http://www.github.com/RallySoftware/Flowdock.NET/blob/b80137d520b531f355c50563b14261be7a82ba8f/Flowdock/Flowdock/Commands/LoginCommand.cs#L33-41'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LoadMessageThread ()</td><td><a href='http://www.github.com/RallySoftware/Flowdock.NET/blob/b80137d520b531f355c50563b14261be7a82ba8f/Flowdock/Flowdock/ViewModels/MessageThreadViewModel.cs#L31-48'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Activate ()</td><td><a href='http://www.github.com/RallySoftware/Flowdock.NET/blob/b80137d520b531f355c50563b14261be7a82ba8f/Flowdock/Flowdock/ViewModels/UsersViewModel.cs#L57-71'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ListenForStartCommand (object sender)</td><td><a href='http://www.github.com/richhildebrand/TimerApp_WP8/blob/c228aa736e3b62e2a3298c0fbe18edefbc2e4d46/PhoneApp1/Voice/VoiceCommander.cs#L17-31'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ListenForStopCommand (object sender)</td><td><a href='http://www.github.com/richhildebrand/TimerApp_WP8/blob/c228aa736e3b62e2a3298c0fbe18edefbc2e4d46/PhoneApp1/Voice/VoiceCommander.cs#L33-46'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ValidarPermiso ()</td><td><a href='http://www.github.com/rubone/wp.photodisplay/blob/614eb8cfb2a80e4ba533394cc6aa1384bbb5d708/src/PhotoDisplay/PhotoDisplay/Views/MainPage.xaml.cs#L37-45'>Link to Source Code</a></td> </tr>
+<tr><td>private async void LockScreenChange (string filePathOfTheImage)</td><td><a href='http://www.github.com/rubone/wp.photodisplay/blob/614eb8cfb2a80e4ba533394cc6aa1384bbb5d708/src/PhotoDisplay/LockerScreenAgent/ScheduledAgent.cs#L62-78'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SpeakText ()</td><td><a href='http://www.github.com/rubone/wp.translator/blob/497545a03279bfc6b11dcc560224e3cdc068d8b4/src/translator/translator/MainPage.xaml.cs#L99-110'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Start ()</td><td><a href='http://www.github.com/ryanlowdermilk/UniversalApp/blob/329b5c566a64853603ba9f6831064a6fc6fccbfa/PhoneApp75/MainPage.xaml.cs#L26-32'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Start ()</td><td><a href='http://www.github.com/ryanlowdermilk/UniversalApp/blob/329b5c566a64853603ba9f6831064a6fc6fccbfa/PhoneApp8/MainPage.xaml.cs#L27-33'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ProcessFiles (string result)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L176-217'>Link to Source Code</a></td> </tr>
+<tr><td>private async void EncryptAndUploadCards (ObservableCollection<Card> cards)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L239-281'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ProcessFiles (string result)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone8/../StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L176-217'>Link to Source Code</a></td> </tr>
+<tr><td>private async void EncryptAndUploadCards (ObservableCollection<Card> cards)</td><td><a href='http://www.github.com/ScottIsAFool/StoreCardBuddy/blob/c13bc86b07b3dd22cc33dead54d4da9114ef4eeb/StoreCardBuddy.WindowsPhone8/../StoreCardBuddy.WindowsPhone7/ViewModel/BackupRestoreViewModel.cs#L239-281'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnInitialize ()</td><td><a href='http://www.github.com/Sheepsteak/EchoesJS/blob/7bfd7f11f2af11592c1d23f211e1a7df053d0888/Sheepsteak.EchoesJS.UI/Features/Articles/CommentsPageViewModel.cs#L64-69'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnInitialize ()</td><td><a href='http://www.github.com/Sheepsteak/EchoesJS/blob/7bfd7f11f2af11592c1d23f211e1a7df053d0888/Sheepsteak.EchoesJS.UI/Features/Main/LatestViewModel.cs#L177-182'>Link to Source Code</a></td> </tr>
+<tr><td>protected async override void OnInitialize ()</td><td><a href='http://www.github.com/Sheepsteak/EchoesJS/blob/7bfd7f11f2af11592c1d23f211e1a7df053d0888/Sheepsteak.EchoesJS.UI/Features/Main/TopViewModel.cs#L178-186'>Link to Source Code</a></td> </tr>
+<tr><td>public async void onDecodeCompleted (String formatID, String ksn, String encTracks, int
+                track1Length, int track2Length, String maskedPAN, String expDate, String
+                cardHolderName)</td><td><a href='http://www.github.com/SlidePay/WindowsPhoneSDK/blob/ab41c5e485cea9fa979f6f83f1df812a50297675/WindowsPhoneSDKTest/pages/SwipedPayment.xaml.cs#L97-173'>Link to Source Code</a></td> </tr>
+<tr><td>public async void VerifyCrednetials (Credentials credentials)</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest/ViewModels/LoginViewModel.cs#L27-44'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData (ContactsResult contactsResult)</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest/ViewModels/PeopleViewModel.cs#L66-103'>Link to Source Code</a></td> </tr>
+<tr><td>public async void ContactsRequest ()</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest.Backend.UnitTests/UnitTests.cs#L87-118'>Link to Source Code</a></td> </tr>
+<tr><td>public async void VerifyCrednetials ()</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest.Backend.UnitTests/UnitTests.cs#L120-140'>Link to Source Code</a></td> </tr>
+<tr><td>public async void StartDataRequestLocal ()</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest.Backend.UnitTests/UnitTests.cs#L149-174'>Link to Source Code</a></td> </tr>
+<tr><td>public async void StartLoginVerificationLocal ()</td><td><a href='http://www.github.com/tarekw/SampleSkypeApp/blob/af443a6489ca61b021bbf3059ee6d32beb0efee7/SkypeTest.Backend.UnitTests/UnitTests.cs#L183-194'>Link to Source Code</a></td> </tr>
+<tr><td>async private static void InitializeVoiceCommands ()</td><td><a href='http://www.github.com/TechPreacher/WP8-FlickrSearch/blob/0b7131fed8ebd1535274c421245eef7f93c59e58/WP8-FlickrSearch/App.xaml.cs#L79-93'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Bluetooth_ConnectToSphero ()</td><td><a href='http://www.github.com/TechPreacher/WP8-Sphero-Control/blob/90de345589b808fe9894f27ae4ade47efb714a1a/WP8-Sphero/SpheroHelper.cs#L85-124'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Bluetooth_SpheroToFixedColor (Color color)</td><td><a href='http://www.github.com/TechPreacher/WP8-Sphero-Control/blob/90de345589b808fe9894f27ae4ade47efb714a1a/WP8-Sphero/SpheroHelper.cs#L132-142'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Bluetooth_ShowBackLed (int bright)</td><td><a href='http://www.github.com/TechPreacher/WP8-Sphero-Control/blob/90de345589b808fe9894f27ae4ade47efb714a1a/WP8-Sphero/SpheroHelper.cs#L144-154'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Bluetooth_SetHeading (int heading)</td><td><a href='http://www.github.com/TechPreacher/WP8-Sphero-Control/blob/90de345589b808fe9894f27ae4ade47efb714a1a/WP8-Sphero/SpheroHelper.cs#L156-166'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Bluetooth_Roll (int direction, int speed)</td><td><a href='http://www.github.com/TechPreacher/WP8-Sphero-Control/blob/90de345589b808fe9894f27ae4ade47efb714a1a/WP8-Sphero/SpheroHelper.cs#L168-178'>Link to Source Code</a></td> </tr>
+<tr><td>private async void FindAndLoadContact (string givenName, string familyName)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter06/ContactsInAction/ContactPage.xaml.cs#L61-83'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Save (List<HighScore> highscores)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter07/DataStorage/HighScoreFileRepository.cs#L34-47'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Clear ()</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter07/DataStorage/HighScoreFileRepository.cs#L49-54'>Link to Source Code</a></td> </tr>
+<tr><td>private async void Start ()</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter10/Sensors/MainPage.xaml.cs#L52-106'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RegisterVoiceCommands ()</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.3.1/MainPage.xaml.cs#L81-86'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdatePhraseList (string commandSetName, string phraseListName)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.3.1/MainPage.xaml.cs#L88-110'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetVoiceFromCommand (string voice, string action)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.3.1/MainPage.xaml.cs#L112-133'>Link to Source Code</a></td> </tr>
+<tr><td>private async void RegisterVoiceCommands ()</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.4/MainPage.xaml.cs#L81-86'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdatePhraseList (string commandSetName, string phraseListName)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.4/MainPage.xaml.cs#L88-110'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SetVoiceFromCommand (string voice, string action)</td><td><a href='http://www.github.com/timothybinkley/Windows-Phone-8-In-Action/blob/ebfff449b2937b5aa00cca4a579688bb23c4c96f/Chapter12/Speech12.4/MainPage.xaml.cs#L112-133'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfile ()</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L143-180'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfile (string filepath)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L182-244'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfileToken (string fileToken)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L246-314'>Link to Source Code</a></td> </tr>
+<tr><td>async public void readfileFromSandbox (string fileToken)</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/MainPage.xaml.cs#L316-381'>Link to Source Code</a></td> </tr>
+<tr><td>private async void buildFileList ()</td><td><a href='http://www.github.com/tonyunreal/CKReader-WP8/blob/39bee501b8a5b5483007cef2fd02cef4cae19a81/CKReader/BooksPage.xaml.cs#L62-257'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Twitter ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/MainPageViewModel.cs#L52-69'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Facebook ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/MainPageViewModel.cs#L76-93'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Continue ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/MainPageViewModel.cs#L115-134'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Facebook ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/AccountsViewModel.cs#L32-49'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Twitter ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/AccountsViewModel.cs#L51-68'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Confirm ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/CheckinViewModel.cs#L41-71'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateHistory ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/MainViewModel.cs#L126-136'>Link to Source Code</a></td> </tr>
+<tr><td>private async void UpdateFriends ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/MainViewModel.cs#L138-148'>Link to Source Code</a></td> </tr>
+<tr><td>private async void SubmitSearch ()</td><td><a href='http://www.github.com/trainshare/TrainShareApp/blob/e353e5ad3ba837aad9c913bce1a4c4c555f1d697/TrainShareApp/ViewModels/SearchResultViewModel.cs#L100-126'>Link to Source Code</a></td> </tr>
+<tr><td>public static async void LoadProgramDetails (string programid)</td><td><a href='http://www.github.com/vksvgithub/IshaWindowsPhone7App/blob/6548f731b69d4800dfb7fd3ad7f2e84b7fbef01b/src/ProgramFinder/Isha.WP8ProgramSearch/App.xaml.cs#L271-308'>Link to Source Code</a></td> </tr>
+<tr><td>public override async void Execute ()</td><td><a href='http://www.github.com/vortexwolf/2ch-Browser-WP7/blob/361ffab286d0532477b0c6775f39aa4cd71516e7/DvachBrowser/Assets/HttpTasks/HttpGetTask.cs#L19-31'>Link to Source Code</a></td> </tr>
+<tr><td>public override async void Execute ()</td><td><a href='http://www.github.com/vortexwolf/2ch-Browser-WP7/blob/361ffab286d0532477b0c6775f39aa4cd71516e7/DvachBrowser/Assets/HttpTasks/HttpPostTask.cs#L27-38'>Link to Source Code</a></td> </tr>
+<tr><td>public async static void PlaySong (int index)</td><td><a href='http://www.github.com/Xerax/gmusic_wp/blob/0ecc393c9d973fb3deacd2af11d510f904a0af18/src/GMusic.Agent.8/AudioPlayer.cs#L109-124'>Link to Source Code</a></td> </tr>
+<tr><td>protected override async void OnInvoke (ScheduledTask task)</td><td><a href='http://www.github.com/y2bd/TotallySwankWP/blob/402b0504fd45fd03098928d5963f4028fb47d7a0/LiveTileUpdater/ScheduledAgent.cs#L43-66'>Link to Source Code</a></td> </tr>
+<tr><td>public async void GetEntries (string query, Action<IEnumerable<Entry>, Exception> callback)</td><td><a href='http://www.github.com/y2bd/TotallySwankWP/blob/402b0504fd45fd03098928d5963f4028fb47d7a0/TotallySwankCore/DataServices/SearchDataService.cs#L17-74'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Initialize ()</td><td><a href='http://www.github.com/yamac/windows-demos/blob/cbb221f49f9ecaa9a827ec2adf911b57c27f427c/YamacDemos.WP8/Demo/Network/SimpleHttp.xaml.cs#L23-37'>Link to Source Code</a></td> </tr>
+<tr><td>public async void Initialize ()</td><td><a href='http://www.github.com/yamac/windows-demos/blob/cbb221f49f9ecaa9a827ec2adf911b57c27f427c/YamacDemos.WP8/Demo/Network/SimpleHttpJSON.xaml.cs#L26-49'>Link to Source Code</a></td> </tr>
+<tr><td>async void Splash_Screen ()</td><td><a href='http://www.github.com/yinsee/barcamppg2013-wp/blob/5af05c501b03bf259a3b555d724ca2853f85aac9/BarCamp/BarCamp/ExtendedSplashScreen.xaml.cs#L24-29'>Link to Source Code</a></td> </tr>
+<tr><td>private async void ShowMyLocationOnTheMap ()</td><td><a href='http://www.github.com/yinsee/barcamppg2013-wp/blob/5af05c501b03bf259a3b555d724ca2853f85aac9/BarCamp/BarCamp/Pages/FullScreenMap.xaml.cs#L323-350'>Link to Source Code</a></td> </tr>
+<tr><td>private async void callCamera ()</td><td><a href='http://www.github.com/yinsee/barcamppg2013-wp/blob/5af05c501b03bf259a3b555d724ca2853f85aac9/BarCamp/BarCamp/Pages/ScanQRPage.xaml.cs#L24-28'>Link to Source Code</a></td> </tr>
+<tr><td>private async void CreateDatabase ()</td><td><a href='http://www.github.com/ZytrixSathwikE/Windows/blob/be90571981ba4c61ca74cc9ba569f6586e9a44a7/My Medi/My Medi/MainPage.xaml.cs#L65-70'>Link to Source Code</a></td> </tr>
+<tr><td>public async void LoadData ()</td><td><a href='http://www.github.com/ZytrixSathwikE/Windows/blob/be90571981ba4c61ca74cc9ba569f6586e9a44a7/My Medi/My Medi/ViewModels/MainViewModel.cs#L72-103'>Link to Source Code</a></td> </tr>
+
+
+				              </tbody>
+			            </table>
+					</div>
+				</div>							
+			</div>
+
+	<!--latest jQuery-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--main bootstrap js-->
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<!--custom js-->
+		<script src="js/custom.js" type="text/javascript"></script>
+	<!--preloader-->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#status").fadeOut();
+				$("#preloader").delay(350).fadeOut("slow");
+			})
+		</script>
+	<!--retina support-->
+		<script src="js/retina.js" type="text/javascript"></script>
+	<!--smooth scroll on page-->
+		<script src="js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+	<!--custom scrollbar-->
+		<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<!--parallax-->
+		<script src="js/jquery.stellar.js" type="text/javascript"></script>
+	<!--contact-->
+		<script src="js/jquery.form.js"></script>		
+	<!--gallery lightbox-->
+		<script src="js/bootstrap-lightbox.min.js"></script>
+	<!--google analytics-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-44202711-1', 'learnasync.net');
+		  ga('send', 'pageview');
+
+		</script>
+		<script src="js/jquery.countTo.js"></script>
+		<script id="_webengage_script_tag" type="text/javascript">
+		  var _weq = _weq || {};
+		  _weq['webengage.licenseCode'] = '311c49c5';
+		  _weq['webengage.widgetVersion'] = "4.0";
+		  
+		  (function(d){
+		    var _we = d.createElement('script');
+		    _we.type = 'text/javascript';
+		    _we.async = true;
+		    _we.src = (d.location.protocol == 'https:' ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/widget/webengage-min-v-4.0.js";
+		    var _sNode = d.getElementById('_webengage_script_tag');
+		    _sNode.parentNode.insertBefore(_we, _sNode);
+		  })(document);
+		</script>	
+	</body>
+</html>
