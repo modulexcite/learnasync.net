@@ -35,7 +35,7 @@ body {
 
 p.caption {
 	color: #4d90fe;
-	margin-bottom: 0px;
+	margin-bottom: 1px;
 }
 
 .stats span{
@@ -54,7 +54,7 @@ p.caption {
 
 caption{
 	font-weight: 600;
-	font-style: italic;
+	font-style: oblique;
 }
 
 
@@ -75,9 +75,9 @@ margin: 0 auto;
 
 
 .image-wrap {
-	-webkit-border-radius: 30em;
-	-moz-border-radius: 30em;
-	border-radius: 30em;
+	-webkit-border-radius: 25em;
+	-moz-border-radius: 25em;
+	border-radius: 25em;
 }
 
 
